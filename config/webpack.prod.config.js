@@ -118,7 +118,22 @@ module.exports = {
   devtool: 'source-map',
   optimization: {
     splitChunks: {
-      chunks: 'all'
+      chunks: 'all',
+      // node_modules 中的文件太大 需要分别打包
+      cacheGroups: {
+        // react react-dom react-router-dom 一起打包成一个 js 文件
+        react: {
+          test: /[\\/]node_modules[\\/]react(.*)?[\\/]/,
+          name: 'react-chunk',
+          priority: 40
+        },
+        // 剩下 node_modules 单独打包
+        libs: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'libs-chunk',
+          priority: 30
+        }
+      }
     },
     runtimeChunk: {
       name: entrypoint => `runtime~${entrypoint.name}.js`
