@@ -17,7 +17,7 @@ module.exports = () => merge(base(true), {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        // 打包时将 public 下的文件复制到 dist 文件下
+        // 打包时将 static 下的文件复制到 dist 文件下 static
         { 
           from: path.resolve(__dirname, '../static'),
           to: path.resolve(__dirname, '../dist/static')

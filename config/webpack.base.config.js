@@ -93,7 +93,7 @@ module.exports = isProd => ({
       threads // 多进程打包
     }),
     new HtmlWebpackPlugin({
-      template: resolve('public/index.html')
+      template: resolve('template/index.html')
     })
   ],
   optimization: {
