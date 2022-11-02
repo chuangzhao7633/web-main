@@ -1,11 +1,15 @@
 .web-main-select-container {
   height: 40px;
   width: 280px;
+  user-select: none;
   .web-main-select {
     width: 100%;
     height: 100%;
-    &:hover {
-      cursor: pointer;
+    .web-main-input-icon {
+      &:hover {
+        cursor: pointer;
+      }
+      user-select: none;
     }
   }
   .web-main-options {
@@ -23,9 +27,14 @@
       color: var(--basic-btn-font-color);
       &:hover {
         background-color: var(--login-input-hover-bg-color);
-        cursor: pointer;
         color: var(--login-input-hover-border-color);
       }
     }
+  }
+  .web-main-options-closed {
+    display: none;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }

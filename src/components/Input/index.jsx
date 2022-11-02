@@ -3,7 +3,7 @@ import Icon from '@component/Icon';
 import './index.less';
 
 export default props => {
-  const { className, icon, type, ...others } = props;
+  const { className, icon, type, isOpen, ...others } = props;
   const [isPaw, setIsPaw] = useState(type === 'password');
   const [inputType, setInputType] = useState(type);
 
@@ -18,6 +18,7 @@ export default props => {
       <Icon className='input-icon' type={icon || ''} />
       <input className={icon ? 'web-main-input-icon' : 'web-main-input'} {...others} type={inputType} />
       {type === 'password' && <Icon className='input-icon-paw' type={isPaw ? 'icon-dakaiyanjing' : 'icon-guanbiyanjing'} onClick={changePawView} />}
+      {type === 'select' && <Icon className='input-icon-select' type={isOpen ? 'icon-shangmian' : 'icon-xiamian'} />}
     </div>
   )
 }

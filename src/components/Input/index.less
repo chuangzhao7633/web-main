@@ -11,7 +11,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  .input-icon-paw {
+  .input-icon-paw, .input-icon-select {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -26,9 +26,14 @@
     font-size: 18px;
     color: var(--basic-btn-font-color);
     border-radius: 4px;
+    line-height: 42px;
     &:focus-visible {
       outline: none;
-      border: 1px solid var(--login-input-hover-border-color);
+      outline: 1px solid var(--login-input-hover-border-color);
+    }
+    &::placeholder {
+      font-size: 18px;
+      color: var(--login-input-placeholder-color);
     }
   }
   .web-main-input {
