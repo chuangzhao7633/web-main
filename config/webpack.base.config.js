@@ -116,7 +116,7 @@ module.exports = isProd => ({
     // 自动补全文件扩展名
     extensions: ['.jsx', '.js', '.json'],
     alias: {
-      '@util': resolve('src/util'),
+      '@util': resolve('src/utils'),
       '@service': resolve('src/service'),
       '@component': resolve('src/components')
     }

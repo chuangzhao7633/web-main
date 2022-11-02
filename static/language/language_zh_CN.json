@@ -1,0 +1,11 @@
+{
+  "code": "000000",
+  "data": {
+    "Username": "用户名",
+    "Password": "密码",
+    "Chinese": "中文",
+    "English": "English",
+    "Sign_In": "登录"
+  },
+  "msg": ""
+}
