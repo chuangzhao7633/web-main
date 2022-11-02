@@ -3,6 +3,7 @@ const path = require('path');
 const EslintWebpackPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const threads = os.cpus().length; // cpu 核心数
 
@@ -27,7 +28,7 @@ const getStyleLoaders = isProd => [
 ];
 
 module.exports = isProd => ({
-  entry: './src/main.js',
+  entry: './src/index.jsx',
   output: {
     path: resolve('dist'),
     filename:'static/js/[name].[contenthash:8].js',
@@ -94,6 +95,15 @@ module.exports = isProd => ({
     }),
     new HtmlWebpackPlugin({
       template: resolve('template/index.html')
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        // 打包时将 static 下的文件复制到 dist 文件下 static
+        { 
+          from: resolve('static'),
+          to: resolve('dist/static')
+        }
+      ]
     })
   ],
   optimization: {
@@ -106,9 +116,9 @@ module.exports = isProd => ({
     // 自动补全文件扩展名
     extensions: ['.jsx', '.js', '.json'],
     alias: {
-      '@util': resolve('/src/util'),
-      '@service': resolve('/src/service'),
-      '@component': resolve('/src/components')
+      '@util': resolve('src/util'),
+      '@service': resolve('src/service'),
+      '@component': resolve('src/components')
     }
   },
   // 关闭性能分析 提升打包速度

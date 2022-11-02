@@ -1,0 +1,14 @@
+:root {
+  /* 字体颜色 */
+  --basic-btn-font-color: #ffffff; /* 默认字体颜色 */
+
+  /* 按钮、a标签 start */
+  --btn-fill-bg-color: #0077c2; /* 1、实心按钮 背景色; */
+  --btn-fill-bd-color: #0077c2; /* 2、实心按钮 边框色; */
+
+  /* 输入框样式 */
+  --login-input-bg-color: #1e2c49;
+  --login-input-border-color: #2A3E65;
+  --login-input-hover-border-color: #00DEFF;
+  --login-input-hover-bg-color: #272938;
+}

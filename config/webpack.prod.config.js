@@ -4,7 +4,6 @@ const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const base = require('./webpack.base.config');
 
 const threads = os.cpus().length; // cpu 核心数
@@ -14,15 +13,6 @@ module.exports = () => merge(base(true), {
     new MiniCssExtractPlugin({
       filename: 'static/css/[name].[contenthash:8].css',
       chunkFilename: 'static/css/[name].[contenthash:8].chunk.css'
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        // 打包时将 static 下的文件复制到 dist 文件下 static
-        { 
-          from: path.resolve(__dirname, '../static'),
-          to: path.resolve(__dirname, '../dist/static')
-        }
-      ]
     })
   ],
   mode: 'production',
