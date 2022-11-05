@@ -6,6 +6,7 @@ import Select from '@component/Select';
 import Input from '@component/Input';
 import { registerRequest, uniqueName } from '@service/global';
 import RestrictConst from '@util/RestrictConst';
+import { PAW_STRENGTH_WEAK, PAW_STRENGTH_MEDIUM, PAW_STRENGTH_HIGH } from '@util/ConstUtil';
 import './index.less';
 
 const { Option } = Select;
@@ -19,6 +20,8 @@ export default props => {
   const [passwordErr, setPasswordErr] = useState();
   const [rePasswordErr, setRePasswordErr] = useState();
   const [isRegister, setIsRegister] = useState(true);
+  const [pawStrength, setPawStrength] = useState(0); // 设置密码强度
+  const [pawStreList] = useState([ PAW_STRENGTH_WEAK, PAW_STRENGTH_MEDIUM, PAW_STRENGTH_HIGH ]);
 
   const navigate = useNavigate();
 
@@ -82,6 +85,18 @@ export default props => {
     setPasswordErr(msg);
   }
 
+  const changePaw = value => {
+    let pawStre = 0;
+
+    RestrictConst.NUM.test(value) && pawStre ++;
+    RestrictConst.CHAR.test(value) && pawStre ++;
+    RestrictConst.SYMBOL.test(value) && pawStre ++;
+
+    setPassword(value);
+    checkPawErr(value);
+    setPawStrength(pawStre);
+  }
+
   const handleChange = key => e => {
     const { value } = e.target;
     switch (key) {
@@ -91,8 +106,7 @@ export default props => {
         break;
 
       case 'password':
-        setPassword(value);
-        checkPawErr(value);
+        changePaw(value);
         break;
       
       case 'repeatPassword':
@@ -127,6 +141,14 @@ export default props => {
             errMsg={passwordErr}
             onChange={handleChange('password')} 
           />
+          {
+            password && 
+              <ul className={`paw-stre-container ${passwordErr && 'paw-stre-container-err'}`}>
+                {
+                  pawStreList.map(item => <li key={item} className={pawStrength >= item ? 'paw-stre-full' : ''} />)
+                }
+              </ul>
+          }
           <Input
             className='register-pwd' 
             type='password' 
@@ -139,9 +161,6 @@ export default props => {
             <Option value='zh_CN'>{intl.get('Chinese').defaultMessage('中文')}</Option>
             <Option value='en_US'>{intl.get('English').defaultMessage('英文')}</Option>
           </Select>
-          {
-            console.log(isRegister)
-          }
           <Button className='register-button' disabled={isRegister} onClick={handleSubmit}>{intl.get('Register').defaultMessage('注册')}</Button>
         </div>
       </div>

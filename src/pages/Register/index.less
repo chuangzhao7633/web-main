@@ -27,6 +27,36 @@
           cursor: pointer;
         }
       }
+      .paw-stre-container {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        justify-content: space-between;
+        padding: 0;
+        padding-left: 10px;
+        margin-top: -20px;
+        li {
+          width: 50px;
+          height: 10px;
+          border: 1px solid #4d4b4b;
+        }
+        li:nth-child(1).paw-stre-full {
+          background-color: #ca2e2e;
+          border: 1px solid #ca2e2e;
+        }
+        li:nth-child(2).paw-stre-full {
+          background-color: #d7af38;
+          border: 1px solid #d7af38;
+        }
+        li:nth-child(3).paw-stre-full {
+          background-color: #20cf46;
+          border: 1px solid #20cf46;
+        }
+      }
+      .paw-stre-container-err {
+        margin-top: 0;
+      }
     }
   }
 }
