@@ -1,0 +1,16 @@
+{
+  "code": "000000",
+  "data": {
+    "version": "1.0",
+    "logoStyle": {
+      "width": "200px"
+    },
+    "logoImgStyle": {
+      "height": "100%"
+    },
+    "productType": 1,
+    "product": "web-main",
+    "apps": []
+  },
+  "msg": ""
+}

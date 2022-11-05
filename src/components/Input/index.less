@@ -5,6 +5,14 @@
   position: relative;
   font-size: 20px;
   color: var(--basic-btn-font-color);
+  input {
+    font-size: 20px;
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: var(--basic-btn-font-color);
+    transition: background-color 50000s ease-in-out 0s;
+  }
   .input-icon {
     position: absolute;
     left: 10px;
@@ -43,5 +51,26 @@
   .web-main-input-icon {
     padding: 0 40px 0 40px;
     width: calc(100% - 80px);
+  }
+  .err-info {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    font-size: 15px;
+    color: red;
+  }
+}
+
+.web-main-input-err {
+  .web-main-input, .web-main-input-icon {
+    outline: 1px solid red;
+    &:focus-visible {
+      outline: none;
+      outline: 1px solid red;
+    }
+    &::placeholder {
+      font-size: 18px;
+      color: var(--login-input-placeholder-color);
+    }
   }
 }

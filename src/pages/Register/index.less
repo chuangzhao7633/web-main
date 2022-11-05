@@ -1,0 +1,32 @@
+.register-root-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: url('../../../static/images/sys_default_img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .register-left {
+    width: 60%;
+  }
+  .register-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    .register-form {
+      width: 280px;
+      .register-title {
+        color: #fff;
+        font-size: 36px;
+      }
+      .register-button, .register-language, .register-user, .register-pwd {
+        display: block;
+        margin-bottom: 30px;
+      }
+      .register-button {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

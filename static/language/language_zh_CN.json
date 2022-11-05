@@ -5,7 +5,10 @@
     "Password": "密码",
     "Chinese": "中文",
     "English": "English",
-    "Sign_In": "登录"
+    "Sign_In": "登录",
+    "Register_User": "注册用户",
+    "Register": "注册",
+    "Repeat_Password": "重复密码"
   },
   "msg": ""
 }

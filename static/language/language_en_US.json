@@ -5,7 +5,10 @@
     "Password": "Password",
     "Chinese": "中文",
     "English": "English",
-    "Sign_In": "Sign in"
+    "Sign_In": "Sign in",
+    "Register_User": "Register user",
+    "Register": "Register",
+    "Repeat_Password": "Repeat Password"
   },
   "msg": ""
 }
