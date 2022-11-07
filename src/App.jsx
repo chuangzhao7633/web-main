@@ -1,29 +1,24 @@
-import React, { Suspense, useState } from 'react';
-import { Routes, Route, Navigate } from "react-router-dom";
-import { appInitialRequest } from '@service/global';
-import { loadLocales } from '@util/Utils';
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import React, { useState, useEffect } from 'react';
+import { getInitSetting } from '@service/global';
 
 export default function App() {
-  const [languageRes, setLanguageRes] = useState();
+  const [currentUser, setCurrentUser] = useState();
 
-  const handleChange = language => {
-    appInitialRequest(language, localLanguageRes => {
-      loadLocales(localLanguageRes && localLanguageRes.data || {}, {});
-      setLanguageRes(localLanguageRes && localLanguageRes.data);
+  useEffect(() => {
+    // 设置前端初始化配置
+    setInitConfig();
+  }, []);
+
+  const setInitConfig = () => {
+    // 获取初始化时需要的信息：用户信息，当前样式主题，页签相关信息
+    getInitSetting(userRes => {
+      setCurrentUser(userRes);
     });
   }
 
   return (
     <>
-      <Suspense fallback={<div>loading...</div>}>
-        <Routes>
-          <Route exact path='/login' element={<Login changeLanguage={handleChange} />} />
-          <Route exact path='/register' element={<Register changeLanguage={handleChange} />} />
-          <Route exact path='/' element={<Navigate to='/login' />} />
-        </Routes>
-      </Suspense>
+      <div>APP...</div>
     </>
   )
 }

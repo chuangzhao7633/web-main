@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import intl from "react-intl-universal";
 import Button from '@component/Button';
 import Select from '@component/Select';
@@ -15,6 +15,7 @@ export default props => {
   const [password, setPassword] = useState(''); // 密码
   const [errMsg, setErrMsg] = useState(); // 错误提示
   const { state } = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     props.changeLanguage(language);
@@ -55,8 +56,13 @@ export default props => {
       password,
       language
     }, res => {
-      console.log(res);
-      setErrMsg(res?.msg);
+      if (res.code === '000001') {
+        setErrMsg(res?.msg);
+      } else {
+        navigate('/index',{
+          replace: true
+        })
+      }
     });
   }
 
@@ -80,6 +86,7 @@ export default props => {
             icon='icon-mima' 
             value={password}
             onChange={handleChangePaw}
+            autoComplete='off'
             placeholder={intl.get('Password').defaultMessage('密码')} 
           />
           <Select className='login-language' value={language} onSelect={handleSelect}>

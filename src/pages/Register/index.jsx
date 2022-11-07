@@ -38,9 +38,10 @@ export default props => {
     setLanguage(language);
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = event => {
+    event.preventDefault();
     registerRequest({ username, password, language } ,res => {
-      const { username, password, language } = res?.data;
+      const { username, password, language } = res;
       navigate('/login',{
         replace:false,
         state:{
@@ -60,7 +61,7 @@ export default props => {
       msg = '只能以字母开头，输入字母、数字、下划线';
     } else {
       const result = await uniqueName({ username });
-      msg= result?.data ? '该用户名已存在' : '';
+      msg= result ? '该用户名已存在' : '';
     }
     setNameErr(msg);
   }
@@ -123,7 +124,7 @@ export default props => {
     <div className='register-root-container'>
       <div className='register-left'></div>
       <div className='register-right'>
-        <div className='register-form'>
+        <form className='register-form'>
           <div className='register-title'>{intl.get('Register').defaultMessage('注册')}</div><br />
           <Input 
             className='register-user' 
@@ -162,7 +163,7 @@ export default props => {
             <Option value='en_US'>{intl.get('English').defaultMessage('英文')}</Option>
           </Select>
           <Button className='register-button' disabled={isRegister} onClick={handleSubmit}>{intl.get('Register').defaultMessage('注册')}</Button>
-        </div>
+        </form>
       </div>
     </div>
   )
