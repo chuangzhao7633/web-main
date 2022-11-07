@@ -45,7 +45,17 @@ module.exports = isProd => ({
       // 处理 less
       {
         test: /\.less$/,
-        use:[...getStyleLoaders(isProd), 'less-loader']
+        use:[
+          ...getStyleLoaders(isProd), 
+          {
+            loader: 'less-loader',
+            options: {
+              lessOptions: {
+                javascriptEnabled: true
+              }
+            }
+          }
+        ]
       },
       // 处理图片
       {

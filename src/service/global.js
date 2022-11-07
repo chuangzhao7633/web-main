@@ -11,10 +11,15 @@ export async function getConfig(callback) {
 // 获取初始化配置
 export async function getInitSetting(callback) {
   multipleRequest([
-    request('get', `${window.service.main}/oauth/token/getUser`)
-    /* request('post', `${window.service.login}/appearance/getCurrentThemeCssFilePath`, { systemCode: window.__Conf__.product }),
-    request('post', `${window.service.login}/appearance/queryAppearanceByType`, { type: 3, systemCode: window.__Conf__.product }) // 获取页签图标及title */
+    request('post', `${window.service.main}/appearance/getCurrentThemeCssFilePath`, { systemCode: window.__Conf__.product }),
+    request('post', `${window.service.main}/appearance/queryAppearanceByType`, { type: 3, systemCode: window.__Conf__.product }) // 获取页签图标及title
   ], callback);
+}
+
+// 获取用户信息
+export async function getUserInfo(callback) {
+  const result = request('post', `${window.service.main}/oauth/token/getUser`);
+  if (result && result.data) callback(result.data);
 }
 
 // 获取国际化语言

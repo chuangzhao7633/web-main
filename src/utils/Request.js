@@ -40,7 +40,7 @@ Axios.interceptors.response.use(
         window.location = 'http://localhost:3001/login';
       }
       return null;
-    } else if (response.data.code === "000000") {
+    } else if (response.data.code === "000000" || response.data.code === '000001') {
       return response.data;
     } else {
       const msg = response.data.msg;

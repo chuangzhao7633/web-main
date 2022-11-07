@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getInitSetting } from '@service/global';
+import { getUserInfo } from '@service/global';
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState();
@@ -11,7 +11,7 @@ export default function App() {
 
   const setInitConfig = () => {
     // 获取初始化时需要的信息：用户信息，当前样式主题，页签相关信息
-    getInitSetting(userRes => {
+    getUserInfo(userRes => {
       setCurrentUser(userRes);
     });
   }
