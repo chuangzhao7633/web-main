@@ -29,7 +29,7 @@ const Index = () => {
       top: 30,
       duration: 2,
       maxCount: 3,
-      getContainer: () => document.getElementById('web-main')
+      getContainer: () => document.getElementById('web-main-root')
     });
   };
 

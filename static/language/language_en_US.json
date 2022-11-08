@@ -8,7 +8,19 @@
     "Sign_In": "Sign in",
     "Register_User": "Register user",
     "Register": "Register",
-    "Repeat_Password": "Repeat Password"
+    "Repeat_Password": "Repeat Password",
+    "Request_Error_401": "Access was denied",
+    "Request_Error_404": "Interface does not exist",
+    "Request_Error_500": "Server connection failed, please try again later",
+    "Request_Timeout": "The request timeout is 30s, please check the network/server",
+    "Request_Login_Tip": "User name and password cannot be empty",
+    "Request_Login_Error": "User name or password error",
+    "Username_Null_Tip": "Username not empty",
+    "Username_Null_Error": "Start letters, include numbers underscores",
+    "Username_Exist": "Username Exist",
+    "Password_Null_Tip": "Password not empty",
+    "Password_Err_Tip": "Two passwords are inconsistent",
+    "Password_Strength_Tip": "At least 8 digits, strength too low"
   },
   "msg": ""
 }

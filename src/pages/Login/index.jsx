@@ -50,14 +50,14 @@ export default props => {
   // 处理登录
   const handleLogin = event => {
     event.preventDefault();
-    if (!username || !password) return setErrMsg('用户名与密码不能为空');
+    if (!username || !password) return setErrMsg(intl.get('Request_Login_Tip').defaultMessage('用户名与密码不能为空'));
     loginRequest({
       username,
       password,
       language
     }, res => {
       if (res.code === '000001') {
-        setErrMsg(res?.msg);
+        setErrMsg(intl.get('Request_Login_Error').defaultMessage('用户名或密码错误'));
       } else {
         navigate('/index',{
           replace: true

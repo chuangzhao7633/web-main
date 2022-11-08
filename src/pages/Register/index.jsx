@@ -56,12 +56,12 @@ export default props => {
   const checkNameErr = async username => {
     let msg = '';
     if (!username) {
-      msg = '用户名不能为空!';
+      msg = intl.get('Username_Null_Tip').defaultMessage('用户名不能为空');
     } else if (!RestrictConst.USERNAME.test(username)) {
-      msg = '只能以字母开头，输入字母、数字、下划线';
+      msg = intl.get('Username_Null_Error').defaultMessage('以字母开头，包含字母、数字、下划线');
     } else {
       const result = await uniqueName({ username });
-      msg= result ? '该用户名已存在' : '';
+      msg= result ? intl.get('Username_Exist').defaultMessage('该用户名已存在') : '';
     }
     setNameErr(msg);
   }
@@ -69,9 +69,9 @@ export default props => {
   const checkRePaw = rePassword => {
     let msg = '';
     if (!rePassword) {
-      msg = '密码不能为空';
+      msg = intl.get('Password_Null_Tip').defaultMessage('密码不能为空');
     } else if(rePassword !== password) {
-      msg = '两次密码不一致'
+      msg = intl.get('Password_Err_Tip').defaultMessage('两次密码不一致');
     }
     setRePasswordErr(msg);
   }
@@ -79,9 +79,9 @@ export default props => {
   const checkPawErr = password => {
     let msg = '';
     if (!password) {
-      msg = '密码不能为空';
+      msg = intl.get('Password_Null_Tip').defaultMessage('密码不能为空');
     } else if (!RestrictConst.PASSWORD.test(password)) {
-      msg = '密码长度至少8位, 且强度不能过低'
+      msg = msg = intl.get('Password_Strength_Tip').defaultMessage('密码长度至少8位, 且强度不能过低');
     }
     setPasswordErr(msg);
   }

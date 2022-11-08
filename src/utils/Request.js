@@ -1,5 +1,7 @@
 import axios from "axios";
 import intl from "react-intl-universal";
+import { message } from 'antd';
+import Loading from '@component/Loading';
 
 const Axios = axios.create();
 
@@ -7,6 +9,22 @@ const isObject = obj => Object.prototype.toString.call(obj) === '[object Object]
 const isArray = arr => Array.isArray(arr);
 
 let requestCount = 0;
+
+// 显示loading
+const showLoading = () => {
+  if (requestCount === 0) {
+    Loading.show(true);
+  }
+  requestCount++;
+};
+
+// 隐藏loading
+const hideLoading = () => {
+  if (requestCount) requestCount--;
+  if (requestCount === 0) {
+    Loading.show(false);
+  }
+};
 
 // 当实例创建时设置默认配置
 Axios.defaults.baseURL = process.env.NODE_ENV === "development" ? '' : window.location.origin;
@@ -16,11 +34,14 @@ Axios.defaults.timeout = 30000;
 // 请求前拦截
 Axios.interceptors.request.use(
   config => {
-    requestCount++;
+    if (config.headers.notLoading) {
+      return config;
+    }
+    showLoading();
     return config;
   },
   err => {
-    requestCount--;
+    hideLoading();
     return Promise.reject(err);
   }
 );
@@ -28,38 +49,35 @@ Axios.interceptors.request.use(
 // 返回后拦截
 Axios.interceptors.response.use(
   response => {
-    requestCount--;
-    console.log(requestCount);
+    hideLoading();
     if (response.data && ["999999", "401", 401].indexOf(response.data.code) !== -1) {
       const msg = response.data.msg || intl.get('Request_Error_401').defaultMessage('访问被拒绝');
-      console.log(msg);
-      debugger;
-      if (response.data && response.data.data) {
+      message.error(msg);
+      /* if (response.data && response.data.data) {
         window.location = response.data.data;
       } else {
         window.location = 'http://localhost:3001/login';
-      }
+      } */
       return null;
     } else if (response.data.code === "000000" || response.data.code === '000001') {
       return response.data;
     } else {
-      const msg = response.data.msg;
-      console.log(msg);
+      message.error(response.data.msg);
       return null;
     }
   },
   err => {
-    requestCount--;
+    hideLoading();
     if (err.response) {
       if (err.response.status === 504 || err.response.status === 404) {
-        console.log(intl.get('Request_Error_404').defaultMessage('接口不存在'));
+        message.error(intl.get('Request_Error_404').defaultMessage('接口不存在'));
       } else if (err.response.status === 401) {
-        console.log(intl.get('Request_Error_401').defaultMessage('访问被拒绝'));
+        message.error(intl.get('Request_Error_401').defaultMessage('访问被拒绝'));
       } else if (err.response.status === 500) {
-        console.log(intl.get('Request_Error_500').defaultMessage('服务器连接失败，请稍后重试'));
+        message.error(intl.get('Request_Error_500').defaultMessage('服务器连接失败，请稍后重试'));
       }
     } else if (err.code === 'ECONNABORTED') {
-      console.log(intl.get('Request_Timeout').defaultMessage('请求超时30s，请检查网络/服务器'));
+      message.error(intl.get('Request_Timeout').defaultMessage('请求超时30s，请检查网络/服务器'));
     }
     return Promise.reject(err);
   }
