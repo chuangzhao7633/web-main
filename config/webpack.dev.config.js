@@ -18,6 +18,9 @@ module.exports = () => merge(base(false), {
     port: 3001,
     open: true,
     hot: true,
-    historyApiFallback: true // 解决前端路由刷新 404 问题
+    historyApiFallback: true, // 解决前端路由刷新 404 问题
+    headers: {
+			'Access-Control-Allow-Origin': '*'
+		}
   }
 })

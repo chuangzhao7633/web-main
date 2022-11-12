@@ -1,0 +1,61 @@
+{
+  "code": "000000",
+  "data": {
+
+    "//": "结构化数据接入",
+    "DA_Structure_Data_Access_Nav": "102001",
+    "//": "数据库数据接入",
+    "DA_Database_DataAccess_Nav": "102001",
+    "//": "远程文件接入",
+    "DA_Remote_File_DataAccess_Nav": "102001",
+    "//": "本地文件上传",
+    "DA_File_DataAccess_Nav": "102001",
+    "//": "非结构化数据接入",
+    "DA_Unstructure_DataAccess_Nav": "102001",
+    "//": "半结构化数据接入",
+    "DA_Semistructure_DataAccess_Nav": "102001",
+    "//": "kafka接入",
+    "DA_Semistructure_Kafka_Nav": "102001",
+    "//": "mongoDB接入",
+    "DA_Semistructure_MongoDb_Nav": "102001",
+    "//": "数据对账",
+    "DA_Data_Reconciliation_Nav": "102001",
+    "//": "CDC实时接入",
+    "DA_CDCRealTime_DataAccess_Nav": "102001",
+    "//": "数据读取",
+    "DA_CDCRealTime_DataFetch_Nav": "102001",
+    "//": "数据写入",
+    "DA_CDCRealTime_DataWriting_Nav": "102001",
+    "//": "数据导出",
+    "DA_DataAccess_Output_Nav": "102003",
+
+    "//": "逻辑模型",
+    "Logical_Model_Nav": "104001",
+    "//": "物理模型",
+    "Physical_Model_Nav": "104005",
+
+
+    "//": "工作流监控",
+    "Workflow_Monitor_Nav": "105026",
+
+    "//": "命名标准",
+    "DM_DS_NameNorm": "103003",
+    "//": "数据元标准",
+    "DM_DS_DataNorm": "103005",
+    "//": "编码标准",
+    "DM_DS_DataDic": "103010",
+    "//": "字段标准",
+    "DM_FieldMap_Nav": "103012",
+
+    "//": "数据质量稽核",
+    "DM_QM_Audit": "103013",
+    "//": "命名标准稽核",
+    "DM_QM_NormAudit": "103026",
+
+    "//": "租户管理",
+    "Tenant_Manage": "108001" ,
+    "//": "租户基础信息",
+    "Tenant_BaseInfo": "108002"
+  },
+  "msg": ""
+}

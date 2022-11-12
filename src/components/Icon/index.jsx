@@ -1,7 +1,13 @@
 import React from 'react';
-import './index.less';
+import { createFromIconfontCN } from '@ant-design/icons';
 
-export default props => {
-  const { type, className, ...others } = props;
-  return <span className={`iconfont ${type || ''} ${className || ''}`} {...others} />
+const IFont = createFromIconfontCN({
+  scriptUrl: "/static/common/font/antdIconFont.js"
+});
+
+function IconFont(props) {
+  const { type, className, other } = props;
+  return <IFont className={className} type={type} {...other} />;
 }
+
+export default IconFont;

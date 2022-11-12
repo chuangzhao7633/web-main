@@ -10,7 +10,74 @@
     },
     "productType": 1,
     "product": "web-main",
-    "apps": []
+    "apps": [
+      {
+        "name": "bdos",
+        "entry": "/bdosplat/",
+        "container": "#app-container",
+        "activeRule": "/bdos"
+      },
+      {
+        "name": "DataAccess",
+        "entry": "/access/",
+        "container": "#app-container",
+        "activeRule": "/DataAccess"
+      },
+      {
+        "name": "SecurityCenter",
+        "entry": "/security/",
+        "container": "#app-container",
+        "activeRule": "/SecurityCenter"
+      },
+      {
+        "name": "VisualEtl",
+        "entry": "/etl/",
+        "container": "#app-container",
+        "activeRule": "/VisualEtl"
+      },
+      {
+        "name": "ConfigCenter",
+        "entry": "/config/",
+        "container": "#app-container",
+        "activeRule": "/ConfigCenter"
+      },
+      {
+        "name": "SystemConfig",
+        "entry": "/system/",
+        "container": "#app-container",
+        "activeRule": "/SystemConfig"
+      },
+      {
+        "name": "MetaDataManage",
+        "entry": "/metadata/",
+        "container": "#app-container",
+        "activeRule": "/MetaDataManage"
+      },
+      {
+        "name": "DataAssetManage",
+        "entry": "/dataasset/",
+        "container": "#app-container",
+        "activeRule": "/DataAssetManage"
+      },
+      {
+        "name": "DataExchange",
+        "entry": "/exchange/",
+        "container": "#app-container",
+        "activeRule": "/DataExchange"
+      },
+      {
+        "name": "OnlineReporting",
+        "entry": "/onlineReporting/",
+        "container": "#app-container",
+        "activeRule": "/Online"
+      },
+      {
+        "name": "IndexSystemManage",
+        "entry": "/indexSystem/",
+        "container": "#app-container",
+        "activeRule": "/IndexSystemManage"
+      }
+    ]
   },
   "msg": ""
 }

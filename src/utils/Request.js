@@ -53,10 +53,10 @@ Axios.interceptors.response.use(
     if (response.data && ["999999", "401", 401].indexOf(response.data.code) !== -1) {
       const msg = response.data.msg || intl.get('Request_Error_401').defaultMessage('访问被拒绝');
       message.error(msg);
-      /* if (response.data && response.data.data) {
+     /*  if (response.data && response.data.data) {
         window.location = response.data.data;
       } else {
-        window.location = 'http://localhost:3001/login';
+        window.location = window.service.loginUrl;
       } */
       return null;
     } else if (response.data.code === "000000" || response.data.code === '000001') {

@@ -1,0 +1,783 @@
+:root {
+  --font-family: MicrosoftYaHei;
+
+  /* 定义基础色start */
+  --basic-font-color: #B8C3E7; /* body字体颜色, modal框文字颜色 */
+  --basic-primary-color: #00DEFF;
+  --basic-primary-fill-color: #0da1bd;
+  --basic-primary-fill-hover-color: #00bfdb;
+  --basic-default-fill-color: #1B1D28;
+  --basic-disabled-font-color: #50546d;
+  --basic-disabled-bg-color: #2c2e40;
+  --basic-disabled-border-color: #3a3d51;
+  --basic-title-color: #fff;
+  --basic-container-bg-color: #1B1D28;
+  --basic-container-border-color: #2B2E3D;
+  --basic-container-element-hover-bg-color: #272938;
+  --basic-second-bg-color: #2C2F41;
+  --basic-success-color: #52c41a;
+  --basic-warning-color: #faad14;
+  --basic-error-color: #ff4d4f;
+  --basic-orange-color: #fa8c16;
+  --basic-yellow-color: #fadb14;
+  --basic-cyan-color: #13c2c2;
+  --basic-blue-color: #1890ff;
+  --basic-purple-color: #722ed1;
+  --basic-status-color: #6078DE;
+  --error-status-color: #F92C37;
+  --alert-status-color: #f38a1a;
+  --success-status-color: #65B566;
+  /* 定义基础色end */
+
+  /* 定义modal框基础色start */
+  --modal-color: var(--basic-font-color);
+  --modal-bg-color: var(--basic-container-bg-color);
+  --modal-container-bg-color: var(--basic-second-bg-color);
+  --modal-mask-bg-color:rgba(120,125,146,0.6); /* 弹窗遮罩层背景色 */
+  --modal-container-border-color: #3E435B;
+  --modal-container-form-element-disabeld-bg-color: #242737;
+  --modal-container-element-hover-bg-color: #3d4054;
+  /* 定义modal框基础色end */
+
+  /* 定义首页按钮背景色*/
+  --header-home-bg-color: #30313f; 
+  
+  /* 除top导航外的背景颜色 */
+  --main-content-bg-color: #0a0b0f; /* body背景颜色 */
+  --main-content-font-color: var(--basic-font-color); /* body字体颜色 */
+
+  /* 子项目内容呈现默认背景色 */
+  --main-child-content-bg-color: #1B1D28;
+
+  /*--main-title-font-color: rgba(255, 255, 255, 0.85);*/ /* h1,h2,h3,h4,h5,h6标题字体颜色 */
+
+  /* antd 组件无数据图标颜色 */
+  --antd-empty-icon-color: #40445b;
+
+  /* 弹框相关 */
+  --modal-header-bg-color: var(--modal-bg-color);/* 弹框header颜色 */
+  --modal-header-color: var(--basic-title-color); /* 弹框 header 字体颜色 */
+  --modal-header-border-corlor: var(--modal-container-border-color); /*  弹框header边框色 */
+  --modal-footer-bg-color: var(--modal-bg-color); /* 弹框footerb背景颜色 */
+  --modal-footer-box-shadow-color: transparent; /* 弹框底部阴影色 */
+  --modal-close-btn-color: #A7A7A7; /* 弹框关闭按钮颜色 */
+  --modal-body-font-color: var(--modal-color); /* 弹框 正文 字体颜色 */
+  --modal-text-color: var(--modal-color); /* 弹框文本字体颜色 */
+  /*模态框body背景色*/
+  --modal-body-bg-color: var(--modal-bg-color);
+  
+  /* top导航变量 */
+  --header-bg-color: #242633; /* top导航背景色 */
+  --header-font-color: #FFFFFF; /* top导航字体颜色 */
+  --header-item-hover-font-color: var(--basic-primary-color); /* top导航鼠标滑过字体颜色 */
+  --header-item-over-bg-color: #1B1D28; /* top导航单项鼠标滑过背景颜色 */
+  --header-item-selected-bg-color: #1B1D28; /* top导航单项选中背景颜色 */
+  --header-item-selected-font-color: var(--basic-primary-color); /* top导航单项选中字体颜色 */
+  --header-top-more-menu-bg-color: rgba(36,38,51,0.7); /* top导航更多弹框背景颜色 */
+  --header-top-more-menu-font-color: #FFFFFF; /* top导航更多弹框字体颜色 */
+  --header-top-more-menu-item-bg-color: rgba(36,38,51, 0.4); /* top导航更多弹框单项鼠标滑过背景颜色 */
+  --header-top-more-item-selected-bg-color: rgba(36,38,51, 0.4); /* top导航更多弹框单项选中背景颜色 */
+  --header-top-more-item-selected-font-color: var(--basic-primary-color); /* top导航更多弹框单项选中字体颜色 */
+
+
+  /* 面包屑变量 */
+  --breadcrumb-bg-color: var(--basic-container-bg-color); /* 面包屑背景颜色 */
+  --breadcrumb-font-color: var(--basic-font-color); /* 面包屑字体颜色 */
+  --breadcrumb-border-color: var(--basic-container-border-color); /* 面包屑边框颜色 */
+
+  /* 左侧二级导航变量 */
+  --left-sider-bg-color: #15161D; /* 二级导航背景颜色 */
+  /*--left-sider-font-color: #97A9B1;*/
+  --left-sider-font-color: var(--basic-font-color); /* 二级导航字体颜色 */
+
+  --left-sider-trigger-bg-color: #0A0B0F; /* 二级导航滑块背景颜色 */
+  --left-sider-trigger-font-color: #ffffff; /* 二级导航滑块字体颜色 */
+  --left-sider-trigger-border-color: var(--basic-container-border-color); /* 二级导航滑块边框颜色 */
+
+  /* 二级导航单项变量 */
+  --left-sider-item-bg-color: #15161D; /* 二级导航单项背景颜色 */
+  --left-sider-item-border-color: var(--basic-container-border-color); /* 二级导航单项边框颜色 sider右边框颜色 */
+  --left-sider-menu-item-border-color: transparent; /* 二级导航单项边框颜色 */
+  --left-sider-select-container-bg-color: #15161D; /* 左侧二级导航同级下拉框容器背景颜色 */
+
+  /* 二级导航单项hover变量 */
+  --left-sider-item-hover-bg-color: var(--basic-container-element-hover-bg-color);
+  --left-sider-item-hover-font-color: var(--basic-primary-color);
+  /* 二级导航单项选中变量 */
+  --left-sider-item-selected-bg-color: var(--basic-container-element-hover-bg-color);
+  --left-sider-item-selected-font-color: var(--basic-primary-color);
+  --left-sider-item-selected-border-color: var(--basic-primary-color);
+
+  /* 按钮相关变量 */
+  /* 按钮primary（实心按钮）: 变量设置 */
+  --btn-primary-bg-color: var(--basic-primary-fill-color);
+  --btn-primary-font-color: #fff;
+  --btn-primary-border-color: var(--basic-primary-fill-color);
+  /* 按钮primary: hover/focus变量设置 */
+  --btn-primary-hover-bg-color: var(--basic-primary-fill-hover-color);
+  --btn-primary-hover-font-color: #fff;
+  --btn-primary-hover-border-color: var(--basic-primary-fill-hover-color);
+  /* 按钮primary: active变量设置 */
+  --btn-primary-active-bg-color: var(--basic-primary-fill-hover-color);
+  --btn-primary-active-font-color: #fff;
+  --btn-primary-active-border-color: var(--basic-primary-fill-hover-color);
+
+  /* 按钮default（空心按钮）: 变量设置 */
+  --btn-default-bg-color: var(--basic-default-fill-color);
+  --btn-default-font-color: var(--basic-primary-color);
+  --btn-default-border-color: var(--basic-primary-color);
+
+  /* 按钮default: hover/focus变量设置 */
+  --btn-default-hover-bg-color: var(--basic-default-fill-color);
+  --btn-default-hover-font-color: var(--basic-primary-fill-color);
+  --btn-default-hover-border-color: var(--basic-primary-fill-color);
+  /* 按钮default: active变量设置 */
+  --btn-default-active-bg-color: var(--basic-default-fill-color);
+  --btn-default-active-font-color: var(--basic-primary-fill-color);
+  --btn-default-active-border-color: var(--basic-primary-fill-color);
+
+  /* 按钮icon-btn相关变量设置 */
+  --icon-btn-bg-color: transparent;
+  --icon-btn-font-color: #B8C3E7;
+  --icon-btn-hover-font-color: var(--basic-primary-color);
+  --icon-btn-active-font-color: var(--basic-primary-color);
+
+  --icon-database-color: #00FF9C; /* 元数据目录 mysql 和 hive 图标颜色 */
+
+  /* 按钮disabled相关变量设置 */
+  --btn-disabled-bg-color: var(--basic-disabled-bg-color);
+  --btn-disabled-font-color: var(--basic-disabled-font-color);
+  --btn-disabled-border-color: var(--basic-disabled-border-color);
+
+  /* 步骤条按钮相关变量设置 */
+  --step-finish-font-color: #0da1bd; /* 步骤条已完成字体颜色 */
+  --step-finish-icon-font-color: #0da1bd; /* 步骤条已完成图标字体颜色 */
+  --step-finish-line-color: #0da1bd; /* 步骤条已完成线条背景颜色 */
+  --step-process-font-color: #0da1bd; /* 步骤条进行中字体颜色 */
+  --step-process-icon-font-color: #0da1bd; /* 步骤条进行中图标字体颜色 */
+  --step-process-line-color: #3E435B; /* 步骤条进行中线条背景颜色 */
+  --step-wait-font-color: #B8C3E7; /* 步骤条等待中字体颜色 */
+  --step-wait-icon-font-color: #3E435B; /* 步骤条等待中图标字体颜色 */
+  --step-wait-line-color: #3E435B; /* 步骤条等待中线条背景颜色 */
+
+  /*// 操作按钮更多样式变量*/
+  --btn-more-bg-color: var(--basic-default-fill-color);
+  --btn-more-font-color: var(--basic-font-color);
+  --btn-more-border-color: var(--basic-container-border-color);
+  /* 按钮: hover/focus变量设置 */
+  --btn-more-hover-bg-color: var(--basic-default-fill-color);
+  --btn-more-hover-font-color: var(--basic-primary-color);
+  --btn-more-hover-border-color: var(--basic-primary-color);
+  /* 按钮: active变量设置 */
+  --btn-more-active-bg-color: var(--basic-default-fill-color);
+  --btn-more-active-font-color: var(--basic-primary-color);
+  --btn-more-active-border-color: var(--basic-primary-color);
+
+  /* a 标签相关设置 */
+  --a-font-color: var(--basic-primary-color);
+  --a-hover-font-color: var(--basic-primary-fill-color);
+  --a-active-font-color: var(--basic-primary-fill-color);
+  --a-disabled-font-color: var(--basic-disabled-font-color);
+
+  /* bfd-row 选择，单选相关设置 例如：物理模型处*/
+  --row-select-bg-color: var(--basic-container-bg-color);
+  --row-select-color: var(--basic-font-color);
+  --row-select-hover-bg-color: var(--basic-container-element-hover-bg-color);
+  --row-select-hover-color: var(--basic-primary-color);
+  --row-select-selected-bg-color: var(--basic-container-element-hover-bg-color);
+  --row-select-selected-color: var(--basic-primary-color);
+
+  /* table 表格设置 */
+  --table-container-bg-color: var(--basic-container-bg-color); /* 表格容器背景颜色 */
+  --table-container-border-color: transparent;
+  --table-head-bg-color: var(--basic-container-bg-color); /* 表头背景颜色 */
+  /*--table-head-border-color: #E1E1E6;!* 表头边框颜色 *!*/
+  --table-head-border-color: #3E435B;/* 表头边框颜色 */
+  /*--table-head-color: #9B9B9B; !* 表头字体颜色 *!*/
+  --table-head-color: #868fab; /* 表头字体颜色 */
+  /*--table-tbody-tr-border-color: #E1E1E6; !* 表行边框颜色 *!*/
+  --table-tbody-tr-border-color: #2B2E3D; /* 表行边框颜色 */
+  --table-tbody-color: var(--basic-font-color); /* 表主体字体颜色 */
+  --table-tbody-bg-color: var(--basic-container-bg-color); /* 表主体背景颜色 */
+  --table-tbody-tr-active-bg-color: var(--basic-container-element-hover-bg-color); /* 表hover或点击时每行的背景色 */
+  --table-tbody-tr-font-color: var(--basic-font-color); /* 表格内容字体颜色 */
+  --table-filter-icon-color: #fff;  /* 表格中tip 提示图标颜色 */
+  /* 仅用于带边框的表格 */
+  --table-border-color: var(--basic-container-border-color); /* 表格边框颜色 */
+
+  --modal-table-container-border-color: var(--modal-container-border-color); /* 仅用于弹框内 */
+
+  /* 平铺表格 */
+  --box-table-detail-color: #888;
+
+  /* 卡片式list展示设置card */
+  --card-list-bg-color: var(--basic-container-bg-color);
+  --card-list-info-font-color: var(--basic-font-color);
+  --card-list-title-font-color: var(--basic-title-color);
+  --card-list-line-color: var(--basic-container-border-color);
+
+  /*分页*/
+  --pagiation-number-color:red; /* TimeLine组件时间日期 */
+
+  /* icon 特殊工具栏中icon的图标颜色 */
+  /* --icon-bg-color: transparent;
+  --icon-color: #5ca4f0;
+  --icon-bg-hover-color: #e8e8e8;
+  --icon-hover-color: #0071d1;
+  --icon-bg-active-color: #e8e8e8;
+	--icon-active-color: #0071d1;
+	--icon-text-color: #97A9B2; */
+	--icon-bg-default-color: #989CC7; /* icon图标默认颜色 */
+
+  /* checkbox相关设置 */
+  --checkbox-bg-color: #13141B; /* checkbox 背景色*/
+  --checkbox-hover-color: var(--basic-primary-color); /* checkbox hover背景色*/
+  --checkbox-border-color: #58668c; /* checkbox border色*/
+  --checkbox-checked-color: var(--basic-primary-color); /* checkbox 选中色 */
+  --checkbox-checked-border-color: var(--basic-primary-color); /* checkbox 选中边框色 */
+  --checkbox-status-before-bg-color: #13141B; /* checkbox 框内背景色*/
+  --checkbox-status-before-border-color: var(--checkbox-border-color);
+  --checkbox-status-after-border-color: var(--basic-primary-color);
+  --checkbox-diabled-color:  rgba(0, 0, 0, 0.28);
+  --checkbox-diabled-bg-color: var(--basic-disabled-bg-color);
+  --checkbox-diabled-border-color: var(--basic-disabled-border-color);
+  --checkbox-disabled-before-bg-color: var(--basic-disabled-bg-color); /* checkbox disabled框内背景色 */
+  --checkbox-indeterminate-color: var(--basic-primary-fill-color);
+  --checkbox-indeterminate-bg-color: var(--basic-primary-fill-color);
+  --checkbox-indeterminate-border-color: var(--basic-primary-fill-color);
+
+  /* select相关设置 */
+  --select-font-color: var(--basic-font-color); /* bdos select下拉框文字颜色 */
+  --select-bg-color: #13141B; /* bdos select下拉框背景色 */
+  --select-selection-border-color: var(--basic-container-border-color); /* antd组件select下拉框相关 */
+  --select-selection-selected-bg-color: var(--basic-container-element-hover-bg-color); /* bdos select下拉框选中背景色 */
+  --select-caret-font-color: #AFB0B5; /* 没发现是哪里的 */
+  --select-selection-hover-bg-color: var(--basic-container-element-hover-bg-color);/* bdos select下拉框鼠标悬浮背景色 */
+  --select-selection-hover-font-color: var(--basic-primary-color);/* bdos select下拉框鼠标悬浮文字色 */
+  --select-poper-box-shadow-color: rgba(195, 195, 195, 0.25);
+  --select-popover-bg-color: #2b2e40; /* 气泡的背景颜色 */
+
+  /* 多选tag标签 */
+  --select-tag-bg-color: #2c2f41;
+  
+  /* 日期选择下拉框picker相关设置 */
+  --picker-bg-color: #2b2e40;
+  --picker-border-color: #3E435B;
+  --picker-color: var(--basic-font-color);
+  --picker-split-line-color: #3E435B;
+  --picker-cell-color: #5e6681;
+  --picker-cell-hover-bg-color: #3d4054;
+  --picker-cell-disabled-bg-color: #50546d;
+  --picker-selected-cell-inside-bg-color: #19738b; /* bfd组件使用 */
+
+  /* radio相关设置 */
+  --radio-font-color: var(--basic-font-color); /* radio字体颜色 */
+  --radio-checked-bg-color: var(--basic-primary-fill-color); /* radio 选中背景颜色 */
+  --radio-hover-bg-color: var(--basic-primary-fill-color); /* radio hover背景颜色 */
+  /* radio相关设置 */
+
+  /* switch相关设置 */
+  --switch-bg-color: #2b2e40;
+  --switch-handle-before-bg-color: #3d4054;
+  --switch-checked-color: #06C938;
+  --switch-checked-handle-before-bg-color: #fff;
+  --switch-normal-color: var(--basic-font-color);
+  /* switch相关设置 */
+
+  /* slider相关设置 ant组件变量值*/
+  --slider-dot-bg-color: #3d4054; /* 刻度背景色 */
+  --slider-dot-active-bg-color: var(--basic-primary-color); /* 刻度选中背景色 */
+  --slider-dot-border-color: #D4D4DE; /* 刻度边框色 */
+  --slider-rail-bg-color: #3d4054; /* 刻度条背景色 */
+  --slider-rail-hover-bg-color: #575b6d; /* 刻度条hover背景色 */
+  --slider-track-bg-color: var(--basic-primary-fill-color); /* 刻度区间背景色 */
+  --slider-track-hover-bg-color: var(--basic-primary-fill-color); /* 刻度已选区间hover背景色 */
+  --slider-dot-font-color: var(--basic-font-color); /* 刻度数值字体颜色 */
+  --slider-dot-active-font-color: var(--basic-primary-fill-color); /* 刻度数值选中字体颜色 */
+  --slider-handle-bg-color: var(--basic-primary-fill-color); /* 刻度拖动按钮背景颜色 */
+
+  /* slider相关设置 */
+
+
+  /* li 列表相关设置 */
+  --li-hover-bg-color: var(--basic-container-border-color); /* 目前发现用的地方，分割线边框色*/
+  /* --li-hover-font-color: #B8C3E7;
+  --li-active-bg-color: #2B2E3D; */
+
+  /* input 输入框相关设置 */
+  --input-border-color: var(--basic-container-border-color);
+  --input-bg-color: #13141B; /* 输入框背景颜色 */
+  --input-font-color: #fff; /* 输入框字体颜色 */
+  --input-focus-border-color: var(--basic-primary-color);
+  --input-onlyread-bg-color: var(--basic-disabled-bg-color); /*只读的背景色*/
+  --input-onlyread-border-color: var(--basic-disabled-border-color); /*只读的边框色*/
+  --input-onlyread-font-color: var(--basic-disabled-font-color); /*只读的字体颜色*/
+  --input-focus-box-shadow-color: rgba(19, 20, 27, 1);
+  --input-placeholder-font-color: var(--basic-font-color);
+
+  /* 标题-相关设置 */
+  --h-border-color: var(--basic-primary-fill-color); /* 特殊的图标/图块可以使用 */
+
+  /* tip 文字说明相关设置 */
+  --tip-bg-color: #2B2E3D;
+  --tip-border-color:  #2B2E3D;
+  --tip-box-shadow-color: rgba(0, 0, 0, .1);
+  --tip-font-color: #B8C3E7;
+  --tip-font-size: 12px;
+
+  /* 分页 样式变量 */
+  /* --pagination-common-border-color: #474F69;
+  --pagination-common-font-color: #474F69;
+  --pagination-common-bg-color: #FFFFFF; */
+
+  /*modal里的内容标题样式*/
+  /* --modal-inner-title-border-color: #3A3D4E;
+  --modal-inner-title-font-color: #fff; */
+
+  /* 滚动条-相关变量*/
+  --scrollbar-track-bg-color: #1B1D28; /* 滚动条滑轨背景颜色 */
+  --scrollbar-thumb-bg-color: #36394c; /* 滚动条滑块背景颜色 */
+
+  /* 查询条件-容器相关样式 */
+  --search-container-background-color: var(--basic-container-bg-color); /* 容器背景颜色 */
+
+  /* panel 相关样式 */
+  --panel-bg-color: var(--basic-container-bg-color);
+  --panel-border-color: var(--basic-container-border-color);
+  --panel-head-bg-color: var(--basic-container-bg-color);
+  --panel-head-color: var(--basic-font-color);
+
+  /* alert 相关样式 */
+  --alert-font-color: var(--basic-font-color);
+  --alert-info-bg-color: #202839;
+  --alert-info-border-color: #202839;
+  --alert-success-bg-color: #1c2b2c;
+  --alert-success-border-color: #1c2b2c;
+  --alert-warning-bg-color: #2f2928;
+  --alert-warning-border-color: #2f2928;
+  --alert-error-bg-color: #292823;
+  --alert-error-border-color: #292823;
+
+	/* tab 页签相关样式变量 */
+	--tabs-border-active: var(--basic-container-bg-color);
+	--tabs-font-bg-color: transparent;
+	--tabs-bg-color: var(--basic-container-bg-color); /* 背景颜色 */
+  --tab-font-color: var(--basic-font-color); /* 页签字体颜色 */
+  --tab-selected-border-color: var(--basic-primary-color); /* 页签选中边框颜色 */
+  --tab-selected-font-color: var(--basic-primary-color); /* 页签选中字体颜色 */
+  --tab-border-bottom-bg-color: var(--basic-container-border-color); /* 页签底部border颜色 */
+
+  /* form 表单样式变量 */
+  --form-help-tip-color: #5B6177; /* 表单提示文字颜色 */
+  --form-error-color: #ff4d4f; /* 表单验证错误时字体/组件边框颜色 */
+
+  --form-element-border-color: var(--input-border-color); /* 表单项元素的border颜色 */
+  --form-element-hover-border-color: var(--basic-primary-color); /* 表单项元素的border颜色 */
+  --form-element-disabeld-font-color: var(--basic-disabled-font-color); /* 表单项元素disabled的字体颜色 */
+  --form-element-disabeld-bg-color: var(--basic-disabled-bg-color); /* 表单项元素disabled的背景颜色 */
+  --form-label-font-color: var(--basic-font-color); /* 表单项元素label字体颜色 */
+
+	/* 逻辑模型chart样式 */
+	--chart-lm-right-border-bottom-color: var(--basic-container-border-color); /* 网格title底部边线 */
+	--chart-lm-bd-line-color: #3e435b; /* DragSider 分割线颜色 */
+	--chart-lm-graph-node-content-color: #575b6d; /* 网格图标节点内容颜色 */
+	/*--chart-lm-graph-node-color: transparent;*/ /* 网格图标节点 */
+	--chart-lm-link-area-top-color: var(--basic-container-border-color); /* 网格连接区域 */
+	--chart-lm-rect2-color: var(--basic-primary-color); /* 网格矩形 */
+	--chart-lm-axis-color: #202026; /* 网格轴 */
+	--chart-lm-tick-color: #85929E; /* 网格标记 */
+	--chart-lm-tick-bg-color: #14151e; /* 网格标记背景 */
+	--chart-lm-link-color: #999; /* 网格连接 */
+	--chart-lm-graph-node-td-color:var(--basic-primary-color); /* 网格td图标节点子项 */
+	--chart-lm-node-text-color: var(--basic-primary-color); /* 网格节点字体填充 */
+	--chart-lm-graph-node-thead-color: #575b6d; /* 网格thead */
+	/*--chart-lm-node-border-color: rgba(249, 66, 66, 0.5); */ /* 网格边框 */
+	--chart-lm-node-selected-box-color: rgba(0,0,0,0.3); /* 网格节点颜色 */
+	--chart-lm-node-selected-border-color: var(--basic-primary-color); /* 网格节点选中边框 */
+	--chart-lm-node-circle-start-color: rgba(9, 178, 185, 0.75); /* 网格圆形 */
+	--chart-lm-node-circle-end-color: rgba(154, 148, 148, 0.34); /* 网格圆形 */
+	--chart-lm-svg-bg-color: #111219; /* 网格背景颜色 */
+  --chart-toolbar-bg-color: var(--basic-container-bg-color); /* 脑图-工具栏背景颜色 */
+  --chart-toolbar-divider-color: var(--basic-container-border-color); /* 脑图-工具栏分割线颜色 */
+  --chart-rect-active-border-color: var(--basic-primary-color); /* 脑图-节点边框颜色 */
+  --chart-rect-bg-color: #3E435B; /* 脑图-节点node背景颜色 */
+  --chart-rect-border-color: #575b6d; /* 脑图-节点node背景颜色 */
+  --chart-line-color: var(--basic-primary-color); /* 脑图- 连线颜色 */
+  --chart-depend-icon-color: #f38a1a; /* 血缘关系- 依赖icon图标颜色 */
+	/* tree搜索无边框样式 */
+	--tree-border-bottom-color: var(--basic-container-border-color); /* 底部border边线 */
+
+  /* 穿梭框 样式变量 也需要区分modal*/
+  --transfer-list-bg-color: var(--basic-container-bg-color); /* 穿梭框-左右2侧列表背景颜色 */
+  --transfer-list-header: var(--basic-container-bg-color);
+  --transfer-to-left-btn-bg-color: var(--basic-container-bg-color); /* 穿梭框-往左按钮背景颜色 */
+  --transfer-to-left-btn-border-color: var(--basic-primary-fill-color); /* 穿梭框-往左按钮边框颜色 */
+  --transfer-to-left-btn-font-color: var(--basic-font-color); /* 穿梭框-往左按钮字体颜色 */
+  --transfer-to-right-btn-bg-color: var(--basic-primary-fill-color); /* 穿梭框-往右按钮背景颜色 */
+  --transfer-to-right-btn-border-color: var(--basic-primary-fill-color); /* 穿梭框-往右按钮边框颜色 */
+  --transfer-font-color: var(--basic-font-color); /* 字体颜色 */
+  --transfer-header-bg-color: #2c2f41;/* 头部背景颜色 */
+  --transfer-search-border-color: var(--basic-container-border-color); /* 头部背景颜色 */
+  --transfer-list-hover-color: var(--basic-container-element-hover-bg-color); /* 内容hover背景颜色 */
+  --transfer-list-select-color: transparent; /* 内容选中背景颜色 */
+
+  /* buttongroup 主数据数据分发配置分发系统 颜色变量配置  */
+  --button-group-master-config-bg-color: #2B2E3D; /* 背景色 */
+  --button-group-master-config-border-color: #3E435B; /* 边框颜色 */
+  --button-group-master-config-color: var(--basic-primary-color); /* 字体颜色 */
+  --button-group-master-config-select-bg-color: #3E435B; /* 背景色-选中 */
+  --button-group-master-config-select-border-color: #3E435B; /* 边框颜色-选中 */
+  --button-group-master-config-select-color: var(--basic-primary-color); /* 字颜色-选中 */
+  --button-group-master-config-hover-bg-color: #3E435B; /* 背景色-悬浮 */
+  --button-group-master-config-hover-border-color: #3E435B; /* 边框颜色-悬浮 */
+  --button-group-master-config-hover-color: var(--basic-primary-color); /* 字颜色-悬浮 */
+
+  /* Tree颜色设置*/
+  --tree-node-font-color: var(--basic-font-color);  /* 树字体颜色 */
+  /*--tree-node-font-color: #414653;  !* 树字体颜色 *!*/
+  --tree-active-font-color: var(--basic-primary-color); /* 树选中字体颜色 */
+  /*--tree-active-bg-color: #DFEFFF; !* 树选中背景颜色 *!*/
+  --tree-active-bg-color: transparent; /* 树选中背景颜色 */
+  /*--tree-hover-bg-color: #DFEFFF; !* 树悬浮背景颜色 *!*/
+  --tree-hover-bg-color: transparent; /* 树悬浮背景颜色 */
+  --tree-hover-font-color: var(--basic-primary-color); /* 树悬浮字体颜色 */
+ /* --tree-toggle-icon-color: #A5AEC8; !*树toggle图标颜色*!*/
+  --tree-toggle-icon-color: var(--basic-font-color); /*树toggle图标颜色*/
+  /*--tree-node-icon-color: #7188DF; !*树图标颜色*!*/
+  --tree-node-icon-color: #00FF9C; /*树图标颜色*/
+  --tree-node-disabled-font-color: #B8BFD1; /*树 结点diabled字体颜色*/
+
+  /* 编辑/查看非弹框单独页-样式变量 */
+  --edit-page-bg-color: var(--basic-container-bg-color); /* 编辑/查看非弹框单独页-背景颜色 */
+  --edit-page-border-color: var(--basic-container-border-color); /* 编辑/查看非弹框单独页-边框颜色 */
+
+  --modal-edit-page-bg-color: var(--modal-container-bg-color); /* 弹窗内*/
+
+  /* 全屏-相关样式变量 */
+  --screen-full-bg-color: var(--basic-container-bg-color); /* 全屏时，背景颜色 */
+
+  /*ide相关样式颜色变量*/
+  --ide-content-bg-color:                                  	#1B1D28;	/*ide内容背景色*/
+ --ide-left-top-bg-color:                                  	#1B1D28;	/*ide左侧顶部背景色*/
+ --ide-left-content-bg-color:                              	#1B1D28;	/*ide左侧内容背景色*/
+ --ide-left-search-input-border-color:                     	#1B1D28;	/*ide左侧搜索框下边框颜色*/
+ --ide-left-search-font-color:                             	#FFFFFF;	/*ide左侧搜索框内文字颜色*/
+ --ide-left-table-tree-icon-no-open-color:                 	#7188DF;	/*ide左侧表的树没有打开的图标的颜色*/
+ --ide-left-tree-script-color:                             	#FFFFFF;	/*ide左侧脚本树脚本颜色*/
+ --ide-right-top-bg-color:                                 	#2B2E3D;	/*ide右侧上部分背景色*/
+ --ide-right-top-border-color:                             	#111219;	/*ide右侧上部分边框色*/
+ --ide-right-top-font-color:                               	#BBD9FF;	/*ide右侧上部字体颜色*/
+ --ide-right-top-split-color:                              	#BBD9FF;	/*ide右侧上部分隔线条颜色*/
+ --ide-right-top-disabled-font-color:                      	#8B98BC;	/*ide右侧上部分禁用字体颜色*/
+ --ide-right-script-tabs-top-bg-color:                     	#111219;	/*ide右侧脚本tabs背景颜色*/
+ --ide-right-script-tab-border-color:                      	#1C1D28;	/*ide右侧脚本标签边框颜色*/
+ --ide-right-script-tab-bg-color:                          	#1C1D28;	/*ide右侧脚本标签背景颜色*/
+ --ide-right-script-tab-font-color:                        	#8F9CC5;	/*ide右侧脚本标签字体颜色*/
+ --ide-right-script-tab-hover-bg-color:                    	#2B2E3D;	/*ide右侧脚本标签hover背景颜色*/
+ --ide-right-script-tab-hover-font-color:                  	#FFFFFF;	/*ide右侧脚本标签hover字体颜色*/
+ --ide-right-script-tab-active-bg-color:                   	#2B2E3D;	/*ide右侧脚本标签选中背景颜色*/
+ --ide-right-script-tab-active-font-color:                 	#FFFFFF;	/*ide右侧脚本标签选中字体颜色*/
+ --ide-right-script-tab-icon-color:                        	var(--basic-primary-color);;	/*ide右侧脚本标签选中字体icon颜色*/
+ --ide-right-script-tab-icon-suc-color:                    	#65B566;	/*ide右侧脚本标签选中字体icon执行成功*/
+ --ide-right-script-tab-icon-fail-color:                   	#F92C37;	/*ide右侧脚本标签选中字体icon其他颜色*/
+ --ide-right-script-tab-icon-run-color:                    	#2B2E3D;	/*ide右侧脚本标签选中字体icon正在执行*/
+ --ide-right-script-tab-close-color:                       	#FFFFFF;	/*ide右侧脚本标签关闭icon颜色*/
+ --ide-right-script-tab-panel-bg-color:                    	#1B1D28;	/*ide右侧脚本标签面板背景颜色*/
+ --ide-right-editor-left-bg-color:                         	#191A24;	/*ide右侧脚本编辑器左侧展示行的背景颜色*/
+ --ide-right-editor-left-border-color:                     	#191A24;	/*ide右侧脚本编辑器左侧展示行的边框颜色*/
+ --ide-right-editor-left-active-line-bg-color:             	#232533;	/*ide右侧脚本编辑器左侧当前行的*/
+ --ide-right-editor-left-line-font-color:                  	#4A5063;	/*ide右侧脚本编辑器左侧行数字体颜色*/
+ --ide-right-editor-left-line-font-family:                 	PingFangSC;	/*ide右侧脚本编辑器左侧行数字体*/
+ --ide-right-editor-active-line-bg-color:                  	#232533;	/*ide右侧脚本编辑器当前行的背景颜色*/
+ --ide-right-editor--font-color:                           	#FFFFFF;	/*ide右侧脚本编辑器字体颜色*/
+ --ide-right-editor--font-family:                          	PingFangSC;	/*ide右侧脚本编辑器字体*/
+ --ide-right-editor-key-font-color:                        	#2F86F7;	/*ide右侧脚本编辑器关键字高亮字体颜色*/
+ --ide-right-editor-top-border-color:                      	#5C6683;	/*ide右侧脚本编辑器顶部border颜色*/
+ --ide-right-editor-content-bg-color:                      	#111219;	/*ide右侧脚本编辑器内容背景颜色*/
+ --ide-resize-bg-color:                                    	#2B2E3D;	/*ide上下缩放条背景色*/
+ --ide-resize-center-top-bg-color:                         	#6A779B;	/*ide上下缩放块儿背景色*/
+ --ide-resize-center-bottom-bg-color:                      	#6A779B;	/*ide上下缩放块儿背景色*/
+ --ide-resize-center-bottom-border-color:                  	#6A779B;	/*ide上下缩放块儿边框色*/
+ --ide-log-bg-color:                                       	#111219;	/*ide内容背景色*/
+ --ide-log-tabs-top-bg-color:                              	#111219;	/*ide执行日志标签列背景色*/
+ --ide-log-tabs-content-bg-color:                          	#1B1D28;	/*ide执行日志panel背景色*/
+
+
+  /*树fetch spinner颜色变量*/
+  --spinner-circle-color: #7188DF; /* 树异步加载转圈的颜色*/
+
+  /* 右键菜单颜色 */
+  --right-menu-hover-bg-color: #2C2F41; /* 右键菜单悬浮背景颜色 */
+  --right-menu-hover-font-color: var(--basic-primary-color); /* 右键菜单悬浮字体颜色 */
+  --right-menu-font-color: var(--basic-font-color); /* 右键菜单字体颜色 */
+  --right-menu-bg-disabled-color: var(--basic-disabled-bg-color); /* 右键菜单禁用字体颜色 */
+  --right-menu-font-disabled-color: var(--basic-disabled-font-color); /* 右键菜单禁用字体颜色 */
+
+  /*首页资产视图相关*/
+  --fullview-top-font-color:#fff;    /*顶部四模块字体颜色*/
+  --fullview-chart-bg-color: var(--basic-container-bg-color);    /*charts背景颜色*/
+  --fullview-title-border-bottom-color: var(--basic-container-border-color);   /*chasts标题下边框颜色*/
+  --fullview-title-sort-line-color: var(--basic-primary-fill-color);    /*标题左侧短竖线颜色*/
+  --fullview-table-title-bg-color: var(--basic-second-bg-color);   /*表格标题背景颜色*/
+
+  /*系统设置计算组件、扩展组件颜色变量*/
+  --sc-calculate-btn-group-bg-color: #15161d; /*顶部buttongroup button背景色*/
+  --sc-calculate-btn-group-border-color: #2B2E3D; /*顶部buttongroup button边框色*/
+  --sc-calculate-btn-group-font-color: #B8C3E7; /*顶部buttongroup button字体色*/
+  --sc-calculate-btn-group-select-bg-color: #2B2E3D; /*顶部buttongroup button背景选中色*/
+  --sc-calculate-btn-group-select-border-color: #2B2E3D; /*顶部buttongroup button选中边框色*/
+  --sc-calculate-btn-group-select-font-color: #FFFFFF; /*顶部buttongroup button选中字体色*/
+  --sc-calculate-component-bg-color: #1a1d28; /*组件背景色*/
+  --sc-calculate-component-border-color: #2b2b2e; /*组件边框色*/
+  --sc-calculate-component-hover-border-color: #0DA1BD; /*组件悬浮边框色*/
+  --sc-calculate-component-hover-box-shadow-color: rgba(33, 43, 72, 0.2); /*组件悬浮边框阴影色*/
+  --sc-calculate-component-title-font-color: #FFFFFF; /*组件标题字体色*/
+  --sc-calculate-component-content-font-color: #B8C3E7; /*组件内容字体色*/
+  --sc-calculate-component-content-border-bottom-color: #2B2E3D; /*组件内容下边框色*/
+
+  /*主数据相关*/
+  --advance-border-bottom-color:#eee;/*高级查询边框颜色*/
+  --maint-formtitle-font-color: var(--basic-title-color);/*历史版本form标题字体颜色*/
+  --maint-circel-min-bg-color: var(--basic-container-bg-color);   /*同心圆内层背景颜色*/
+  --maint-circel-bg-color: var(--basic-primary-fill-color);    /*同心圆外层背景颜色*/
+  --maint-circel-line-color: var(--basic-container-border-color);  /*连接同心圆线条颜色*/
+
+  /*系统设置-外观管理*/
+  --system-exterior-img-bg-color: var(--basic-container-bg-color); /* 图片选择区域背景色 */
+  --system-exterior-img-border-color: var(--basic-container-border-color); /* 图片选择区域border色 */
+  --system-exterior-help-tip-font-color: #5B6177; /* 提示信息文字颜色 */
+  --system-exterior-file-tip-font-color: #737272; /* 上传文件提示文字颜色 */
+  /*系统设置-外观管理*/
+
+
+  /*系统设置-登录页*/
+  --system-login-process-inner-bg-color: #fff; /* 文件上传进度条背景颜色 */
+  --system-login-process-font-color: rgba(0, 0, 0, 0.45); /* 文件上传进度条字体颜色 */
+  --system-login-process-linear-left-bg-color: rgb(16, 142, 233); /* 文件上传进度条渐变左侧背景颜色 */
+  --system-login-process-linear-right-bg-color: rgb(135, 208, 104); /* 文件上传进度条渐变右侧背景颜色 */
+  /*系统设置-登录页*/
+
+
+
+  /*系统设置-主题*/
+  --system-theme-img-border-color: #A0A6B7; /* 图片容器边框颜色 */
+  --system-theme-img-selected-border-color: #224AD4; /* 图片容器选中边框颜色 */
+  --system-theme-name-font-color: var(--basic-font-color); /* 主题名称字体颜色 */
+  --system-theme-operation-bg-color: rgba(34, 74, 212, 0.7); /* 主题蒙版背景颜色 */
+  --system-theme-select-tip-bg-color: #224AD4; /* 主题选中图标背景颜色 */
+  --system-theme-select-tip-font-color: #fff; /* 主题选中图标字体颜色 */
+  --system-theme-operation-top-btn-bg-color: #E7ECFD; /* 主题蒙版上边按钮背景颜色 */
+  --system-theme-operation-top-btn-border-color: #E7ECFD; /* 主题蒙版上边按钮边框颜色 */
+  --system-theme-operation-top-btn-font-color: #213EA7; /* 主题蒙版上边按钮字体颜色 */
+  --system-theme-operation-bottom-btn-bg-color: transparent; /* 主题蒙版下边按钮背景颜色 */
+  --system-theme-operation-bottom-btn-border-color: #fff; /* 主题蒙版下边按钮边框颜色 */
+  --system-theme-operation-bottom-btn-font-color: #fff; /* 主题蒙版下边按钮字体颜色 */
+  --system-theme-add-border-color: #A0A6B7; /* 主题新增边框颜色 */
+  --system-theme-add-bg-color: transparent; /* 主题新增背景颜色 */
+  --system-theme-add-font-color: var(--basic-font-color); /* 主题新增字体颜色 */
+  --system-theme-upload-font-color: var(--basic-font-color); /* 主题上传字体颜色 */
+  --system-theme-upload-bg-color: var(--input-bg-color); /* 主题上传背景颜色 */
+  /*系统设置-主题*/
+
+  /*ant4.0 addrowtable组件颜色变量*/
+  --add-row-table-require-font-color: #ff4d4f; /*必填标识颜色*/
+  --add-row-table-require-error-tip-color: #f5222d; /*必填校验提示颜色*/
+  --add-row-table-require-error-bg-color: var(--basic-container-bg-color); /*必填校验背景颜色*/
+  /*ant4.0 addrowtable组件颜色变量*/
+
+  /* 安全中心样式变量*/
+
+  /*模态框内容标题*/
+  --modal-form-title-font-color: var(--basic-title-color); /*字体颜色*/
+  --modal-form-title-border-color: var(--basic-primary-fill-color); /*边框颜色*/
+
+  /* 穿梭框*/
+
+
+  /* accesskey 提示样式变量 */
+  --security-accesskey-tip-border-color: #ffc500; /*边框颜色*/
+  --security-accesskey-tip-bg-color: #ffffb4; /*背景颜色*/
+  --security-accesskey-tip-color: #414756;
+
+  /* 安全中心样式变量*/
+
+
+  /* 更多按钮 popover下拉列表变量 */
+  --more-popover-border-color: var(--basic-primary-color); /* 边框颜色 */
+  --more-btn-border-color: var(--basic-primary-color); /* 更多按钮边框颜色 */
+
+  /* 新增颜色变量 */
+  --popover-bg-color: #2c2f41; /* 气泡的背景颜色 */
+  --popover-font-color: var(--basic-font-color);
+  --poper-box-shadow-color: rgba(17, 17, 17, .15);
+
+  /* 项目管理-界面样式变量 */
+  --project-card-operation-icon-color: #5D6B94; /* 项目-操作按钮颜色 */
+  --project-card-operation-icon-hover-color: var(--basic-primary-fill-color); /* 项目-操作按钮hover颜色 */
+  --project-card-default-icon-bgColor: #FFC313; /* 默认项目-图标背景颜色 */
+  --project-car-default-icon-color: #fff; /* 默认项目-图标颜色 */
+
+  /* 对比时的相关颜色变量 */
+  --compare-red: #FF0000;
+  --compare-green: #00CE05;
+  --compare-yellow: #FFA200;
+  --compare-blue: #49a7ff;
+
+  /* 质量报告界面样式变量 */
+  --monitor-top-purple: #28283b; /* 质量报告- 紫色框-背景颜色 */
+  --monitor-top-green: #1c2b2c; /* 质量报告- 绿色框-背景颜色 */
+  --monitor-top-yellow: #2f2928; /* 质量报告- 黄色框-背景颜色 */
+  --monitor-top-blue: #202839; /* 质量报告- 蓝色框-背景颜色 */
+  --monitor-top-orange: #292823; /* 质量报告- 橙色框-背景颜色 */
+
+  --rule-config-del-bgColor: #58668c; /* 稽核规则- 编辑- 删除图标背景颜色 */
+
+
+
+  /* etl画布样式变量 start */
+
+  --etl-bg-color: #111219; /* etl画布背景颜色 */
+  --etl-line-color: #202026; /* etl画布背景网格线颜色 */
+
+  --etl-left-bg-color: #111219; /* etl左侧算子背景色 */
+  --etl-list-panel-title-bg-color: #272939; /* etl左侧算子listpanel背景颜色 */
+  --etl-list-panel-title-icon-color: #9BA5C1; /* etl左侧算子listpanel左侧图标颜色 */
+  --etl-list-panel-title-font-color: #8F9CC5; /* etl左侧算子listpanel字体颜色 */
+  --etl-list-panel-title-border-color: transparent; /* etl左侧算子listpanel边框颜色 */
+  --etl-list-panel-title-border-bottom-color: #1B1D28; /* etl左侧算子listpanel底部边框颜色 */
+  --etl-list-font-color: #8F9CC5; /*etl左侧算子字体颜色*/
+  --etl-list-panel-content-hover-bg-color: #272938; /*etl左侧算子内容区鼠标hover背景色*/
+
+  --etl-list-panel-title-active-bg-color: #272939; /* etl左侧算子listpanel打开背景颜色 */
+  --etl-list-panel-title-active-border-bottom-color: transparent; /* etl左侧算子listpanel打开背景颜色 */
+  --etl-list-panel-title-content-bg-color: #1B1D28; /* etl左侧算子listpanel打开内容背景颜色 */
+
+  --etl-top-tool-color: #BBD9FF; /* etl顶部工具栏按钮图标颜色 */
+  --etl-top-tool-hover-color: #00deff; /* etl顶部工具栏按钮图标鼠标经过颜色 */
+  --etl-top-tool-active-color: #00deff; /* etl顶部工具栏按钮图标鼠标选中颜色 */
+  --etl-top-tool-bg-color: #2B2E3D; /* etl顶部工具栏背景颜色 */
+
+  --etl-name-bg-color: #2B2E3D; /* etl名称展示背景颜色 */
+  --etl-name-font-color: #B8C3E7; /* etl名称展示字体颜色 */
+
+  --etl-node-bg-color: #272939; /* etl结点背景颜色 */
+  --etl-node-border-color: #272939; /* etl结点边框颜色 */
+  --etl-node-circle-border-color: #A1A1A1; /* etl结点连线circle边框颜色 */
+  --etl-node-circle-bg-color: #272939; /* etl结点连线circle背景颜色 */
+  --etl-node-name-font-color: #B8C3E7; /* etl结点名称字体颜色 */
+
+  --etl-active-node-bg-color: #272939; /* etl选中结点背景颜色 */
+  --etl-active-node-border-color: #00deff; /* etl选中结点边框颜色 */
+  --etl-active-node-circle-border-color: #A1A1A1; /* etl选中结点连线circle边框颜色 */
+  --etl-active-node-circle-bg-color: #FFFFFF; /* etl选中结点连线circle背景颜色 */
+  --etl-active-node-name-font-color: #414653; /* etl选中结点名称字体颜色 */
+
+
+
+  --etl-link-fill-color: #5E6175; /* etl连线颜色 */
+  --etl-link-active-fill-color: #00deff; /* etl连线选中颜色 */
+  --etl-arrow-fill-color: #6B6F8A; /* etl连线箭头颜色 */
+
+  --etl-table-node-icon-color: #36aeff; /* etl表输入算子图标颜色 */
+  --etl-transfer-node-color: #21de95; /* etl转换算子图标颜色 */
+  --etl-join-node-color: #9d35ff; /* etl关联算子图标颜色 */
+  --etl-output-node-color: #ffaa00; /* etl输出算子图标颜色 */
+  --etl-other-node-color: #ff00a4; /* etl其他算子图标颜色 */
+
+
+  --etl-move-line-bg-color: #6A779B; /* etl画布数据预览分界移动线背景色 */
+  --etl-move-bg-color: #AFB7CE; /* etl画布数据预览分界移动块儿背景色 */
+
+/*  --etl-data-preview-tab-header-bg-color: #fff; !* etl数据预览tab页签头部背景色 *!
+  --etl-data-preview-tab-header-font-color: #8F9CC5; !* etl数据预览tab页签头部字体颜色 *!
+  --etl-data-preview-tab-header-border-color: transparent; !* etl数据预览tab页签头部边框颜色 *!
+  --etl-data-preview-tab-activeheader-bg-color: #fff; !* etl数据预览tab页签头部选中背景色 *!
+  --etl-data-preview-tab-active-header-font-color: #224AD4; !* etl数据预览tab页签头部选中字体颜色 *!
+  --etl-data-preview-tab-active-header-border-color: #224AD4; !* etl数据预览tab页签头部选中边框颜色 *!*/
+  --etl-data-preview-tab-up-font-color: #AFBBE3; /* etl数据预览向上移动箭头颜色 */
+  --etl-data-preview-tab-panel-bg-color: #111219; /* etl数据预览背景色 */
+  --etl-data-preview-log-bg-color: transparent; /* etl数据预览日志背景颜色 */
+
+
+
+  --etl-field-deal-new-color: #ff5353; /* etl字段处理 新增字段颜色 */
+  --etl-field-deal-edit-color: #0ab721; /* etl字段处理 编辑字段颜色 */
+  /*--etl-field-deal-font-color: #6078DE; !* etl字段处理 设置字段图标颜色 *!*/
+  --etl-field-deal-bg-color: #216ad8; /* etl字段处理 设置字段背景颜色 */
+  --etl-field-deal-left-bg-color: #111219; /* etl字段处理 左侧背景颜色 */
+  --etl-field-deal-left-border-color: var(--input-border-color); /* etl字段处理 左侧边框颜色 */
+  --etl-field-deal-left-title-bg-color: #272939; /* etl字段处理 左侧头部背景颜色 */
+  --etl-field-deal-left-operation-font-color: #8F9CC5; /* etl字段处理 左侧头操作列表操作字体颜色 */
+
+  --etl-field-clean-set-border-color: var(--basic-container-border-color); /* etl字段处理-字段清洗-字段函数设置边框颜色 */
+  --etl-field-clean-set-header-bg-color: #272939; /* etl字段处理-字段清洗-字段函数设置头部背景颜色 */
+  --etl-field-clean-set-content-bg-color: #1b1d28; /* etl字段处理-字段清洗-字段函数设置内容背景颜色 */
+  --etl-field-clean-set-content-empty-font-color: var(--basic-disabled-font-color); /* etl字段处理-字段清洗-字段函数设置没有配置时字体颜色 */
+  --etl-field-clean-left-border-color: var(--basic-container-border-color); /* etl字段处理-字段清洗-左侧函数列表边框颜色 */
+
+
+  --etl-suanzi-content-bg-color: var(--modal-bg-color); /* etl-算子-内容背景色 */
+  --etl-suanzi-content-border-color: var(--basic-container-border-color); /* etl-算子-内容边框色 */
+  --etl-suanzi-content-icon-color: #00deff; /* etl-算子-内容图标色 */
+  --etl-suanzi-content-font-color: var(--basic-font-color); /* etl-算子-字体色 */
+  --etl-suanzi-content-li-hover-bg-color: #272939; /* etl-算子-lihover背景色 */
+
+  --etl-suanzi-total-group-bg-color: #272939; /* etl-算子-汇总分组字段背景色 */
+
+  --etl-filter-change-bg-color: #ff6001; /* etl-过滤、横连接算子-切换模式背景色 */
+  --etl-filter-change-icon-color: #fff; /* etl-过滤、横连接算子-切换模式icon色 */
+  --etl-filter-change-tip-color: #ff6001; /* etl-过滤、横连接算子-切换模式字体、border色 */
+  --etl-filter-change-shadow-color: transparent; /* etl-过滤、横连接算子-切换模式阴影色 */
+  --etl-filter-change-search-item-hover-bg-color: #272939; /* etl-过滤、横连接算子-自定义模式字段hover背景色 */
+
+  /* etl画布样式变量 end */
+
+  /* 右键菜单样式变量 start */
+  --context-menu-bg-color: var(--select-bg-color); /* 背景色 */
+  /* 右键菜单样式变量 end */
+
+
+  /*listpanel样式变量 start */
+  --list-panel-header-bg-color: #272939; /* 头部背景色 */
+  --list-panel-border-color: #1B1D28; /* 边框色 */
+  --list-panel-header-font-color: #8F9CC5; /* 头部字体颜色 */
+  --list-panel-header-active-font-color: #8F9CC5; /* 头部字体颜色 */
+  /*listpanel样式变量 end */
+
+  --drag-line-bg-color: var(--basic-container-border-color); /* 拖拽左右布局的背景颜色 */
+  --drag-track-border-color: #575b6d; /* 拖拽滑块的边框颜色 */
+  --drag-track-bg-color: var(--basic-container-bg-color); /* 拖拽滑块的背景颜色 */
+
+  /* 工作流相关颜色变量 */
+  --europa-node-panel-bg-color: var(--basic-container-bg-color); /* 节点弹框的背景颜色 */
+  --europa-workspace-bg-color: #111219; /* 工作流画布背景颜色 */
+  --europa-workspace-grid-color: #202026; /* 工作流画布网格线颜色 */
+  --europa-tree-node-icon-color: var(--basic-primary-color); /* 工作流左侧树节点图标颜色 */
+  --europa-node-bg-color: #2B2E3D; /* 工作流画布中节点背景颜色 */
+  --europa-node-selected-border-color: var(--basic-primary-color); /* 工作流画布中节点选中时边框颜色 */
+  --europa-max-btn-icon-color: #575b6d;  /* 工作流节点信息弹框最大化按钮字体颜色 */
+
+  /* 警告右侧弹出框 start*/
+  --warn-bg-color: var(--basic-container-bg-color); /* 背景色 */
+  --warn-icon-color: #faad14; /* 图标颜色 */
+
+  /* 高亮文字样式 */
+  --highlight-color: #ff00a4;
+  /* 高亮文字样式 */
+  
+  --follow-icon-color: #faad14; /* 关注图标颜色 */
+
+  /* 日历样式 start*/
+  --calendar-panel-bg-color: var(--popover-bg-color);  /* 日历面板背景色 */
+  --calendar-panel-border-color: var(--basic-container-border-color);  /* 日历面板边线色 */
+  --calendar-panel-font-color: var(--basic-font-color);  /* 日历面板字体色 */
+  --calendar-panel-cell-hover-font-color: var(--basic-primary-fill-hover-color); /* 日期hover字体颜色 */
+  --calendar-panel-cell-hover-bg-color: var(--basic-container-element-hover-bg-color); /* 日期hover背景颜色 */
+  --calendar-panel-cell-disabled-font-color: var(--a-disabled-font-color); /* 不可选择日期字体颜色 */
+  --calendar-panel-cell-selected-font-color: #fff; /* 日期选中字体颜色 */
+  --calendar-panel-cell-selected-bg-color: var(--basic-primary-color); /* 日期选中背景颜色 */
+  --calendar-panel-today-border-color: var(--basic-primary-color); /* 当前日期边线颜色 */
+  --calendar-panel-today-font-color: var(--a-font-color); /* 当前日期字体颜色 */
+  /* 日历样式 end*/
+
+}

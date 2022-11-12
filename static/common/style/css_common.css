@@ -1,15 +1,36 @@
 :root {
-  /* 字体颜色 */
-  --basic-btn-font-color: #ffffff; /* 默认字体颜色 */
-  --login-input-placeholder-color: #898a8a;
+  /* top导航(一级菜单) start */
+
+  --top-menu-bg-color: #1E2C54; /* top导航(一级菜单)背景色 */
+  --top-menu-font-color: #FFFFFF; /* top导航(一级菜单)字体颜色 */
+  --top-menu-hover-selected-font-color: #6078DE; /* top导航(一级菜单)鼠标滑过、选中字体颜色 */
+  --top-menu-hover-selected-bg-color: #182344; /* top导航单项(一级菜单)鼠标滑过背景颜色 */
+
+  /* top导航(一级菜单) end */
+
+
+  /* 左侧导航(二级菜单) start */
+
+  --left-menu-bg-color: #fff;  /* 二级导航(左侧菜单)背景颜色 */
+  --left-menu-font-color: #414756; /* 二级导航(左侧菜单)字体颜色 */
+  --left-menu-hover-selected-bg-color: #F2F5FD;  /* 二级导航单项鼠标经过、选中背景颜色 */
+  --left-menu-hover-selected-font-color: #6078DE; /* 二级导航单项鼠标经过、选中字体颜色 */
+  --left-menu-hover-selected-border-color: #6078DE; /* 二级导航单项鼠标经过、选中左侧边框颜色 */
+  --left-menu-bottom-border-color: #E9ECF3 ; /*二级导航底部缩放边框颜色*/
+  /* 左侧导航(二级菜单) end */
 
   /* 按钮、a标签 start */
-  --btn-fill-bg-color: #0077c2; /* 1、实心按钮 背景色; */
-  --btn-fill-bd-color: #0077c2; /* 2、实心按钮 边框色; */
+  --btn-fill-bg-color: #224AD4; /* 1、实心按钮 背景色;
+     2、空心按钮鼠标经过字体颜色；
+   */
+  --btn-fill-font-color: #fff; /* 实心按钮 字体色 */
+  --btn-fill-hover-color: #216ad8; /* 实心按钮 鼠标经过背景色；tab页签鼠标经过、选中下边框和字体颜色💰 */
 
-  /* 输入框样式 */
-  --login-input-bg-color: #1e2c49;
-  --login-input-border-color: #2A3E65;
-  --login-input-hover-border-color: #00DEFF;
-  --login-input-hover-bg-color: #272938;
+  --btn-default-color: #6078DE; /* 空心按钮字体颜色, */
+
+  --a-color: #6078DE; /* a标签字体颜色, 表格操作栏文字颜色*/
+  --a-hover-color: #224AD4; /* a标签字体颜色, 表格操作栏文字颜色，鼠标经过颜色*/
+
+  /* 按钮、a标签 end */
+
 }

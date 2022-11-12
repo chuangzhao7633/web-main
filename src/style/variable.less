@@ -1,0 +1,94 @@
+@product-prefix: web-main;
+
+@root-font-size: 12px;
+// 弹框变量
+@modal-header-height: 45px;
+@modal-btn-height: 30px;
+@modal-input-height: 30px;
+
+// 字体设置
+@header-font-size: 15px;
+@normal-font-size: 12px;
+@tip-font-size: 12px;
+@logo-font-size: 26px;
+@submenu-font-size: 14px;
+@home-icon-size: 20px;
+
+
+@header-height: 50px;
+@header-padding-hor: 40px;
+@logo-width: 140px;
+@logo-line-height: 35px;
+@header-menu-margin-left: 80px;
+
+@sider-trigger-min-width: 42px;
+@sider-trigger-max-width: 180px;
+@sider-trigger-height: 42px;
+@sider-trigger-line-height: 44px;
+@sider-trigger-font-size: 15px;
+@sider-max-width: 180px;
+@sider-min-width: 42px;
+
+@child-content-bg-color: var(--main-content-bg-color);
+@border-color-base: #e3ebf3;
+@padding-horizontal: 20px;
+@btn-height: 36px; // 按钮高度
+@breadcrumb-height: 40px;
+@breadcrumb-line-height: 38px;
+@sub-menu-height: 40px;
+@sub-menu-padding: 0 12px;
+@sub-menu-sub-menu-padding: 0 12px 0 40px;
+
+@form-item-margin-bottom: 20px;
+
+// 项目选择
+@project-select-padding: 5px 12px;
+@project-select-height: 30px;
+
+// 模态框
+@modal-top: 30px; // 模态框距离顶部距离
+@modal-default-width: 600px; // 默认宽度（小框）
+@modal-md-width: 800px; // 中框宽度
+@modal-lg-width: 1000px; // 大框宽度
+@modal-outsize-width: 100%; // 超大框宽度
+
+@modal-header-height: 45px; // 标题高度
+@modal-header-line-height: 45px; // 标题行高
+@modal-header-font-size: 16px; // 标题字体大小
+@modal-header-padding: 0 25px; // 标题内边距
+
+@modal-body-padding: 15px 25px; // 内容内边距
+
+@modal-footer-height: 60px; // 底部高度
+@modal-footer-padding: 15px 25px; // 底部内边距
+@modal-footer-btn-padding: 0 36px; // 模态框底部按钮padding
+
+// 确认模态框
+@modal-confirm-width: 400px; //宽度
+@modal-confirm-footer-padding: 15px 25px; // 底部padding
+@modal-confirm-footer-btn-padding: 0 15px; // 按钮padding
+
+// 按钮
+@btn-height: 30px; // 按钮高度
+@btn-line-height: 28px;
+@btn-sm-height: 24px;
+@btn-sm-line-height: 22px;
+@btn-padding: 0 20px;
+@input-height: 30px;
+@btn-md-height: 24px;
+@btn-md-line-height: 22px;
+@btn-md-padding: 0 12px;
+
+.remMixin() {
+  @functions: ~`(function() {
+    var clientWidth='1920px';
+
+    function convert(size) {
+      return typeof size==='string' ? size.replace('px', '') : size;
+    }
+
+    this.rem=function(size) {
+      return convert(size) / convert(clientWidth) * 10 + 'rem';
+    }
+  })()`;
+}
