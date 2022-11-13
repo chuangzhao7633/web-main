@@ -1,0 +1,55 @@
+{
+  "code": "000000",
+  "data": {
+    "jumpRouter": {
+      "/tag/TagApplication/tagPortrait/portrait/:param": {  "//": "从其他顶部菜单或左侧菜单跳转到当前设置的url，有的话配置，没有就不配置",
+        "isOpenNew": true, "//": "是否新打开窗口显示",
+        "ignoreTopMenuFlag": true, "//": "忽略掉顶部菜单相同",
+        "topKey": "TagApplication",  "//": "顶部菜单code",
+        "leftMenu": { "//": "路由对应的左侧菜单",
+          "key": "TA_Tag_Portrait",
+          "router": "/tag/TagApplication/tagPortrait",
+          "icon": "picture-o",
+          "cn": "标签画像",
+          "code": "TA_Tag_Portrait_Nav"
+        }
+      },
+      "/tag/TagFactory/tagMonitor": {
+        "topKey": "TagFactory",  "//": "顶部菜单code",
+        "leftMenu": { "//": "路由对应的左侧菜单",
+          "key": "TF_Tag_Monitor",
+          "parentKey": "TF_Data_Dev",
+          "router": "/tag/TagFactory/tagMonitor",
+          "icon": "file-code-o",
+          "cn": "标签监控",
+          "code": "TF_Tag_Monitor_Nav"
+        }
+      },
+      "/tag/TagFactory/dataQuality/qualityMonitor/tableDetail": {
+        "topKey": "TagFactory",
+        "leftMenu": { "//": "路由对应的左侧菜单",
+          "key": "TF_Tag_Quality_Monitor",
+          "parentKey": "TF_Audit_Manage",
+          "router": "/tag/TagFactory/dataQuality/qualityMonitor",
+          "icon": "subscript",
+          "cn": "质量监控",
+          "code": "TF_Tag_Quality_Monitor_Nav"
+        }
+      },
+      "/tag/TagApplication/group/api/:params": {
+        "topKey": "TagApplication",
+        "isOpenNew": true, "//": "是否新打开窗口显示",
+        "ignoreTopMenuFlag": true, "//": "忽略掉顶部菜单相同",
+        "leftMenu": { "//": "路由对应的左侧菜单",
+          "key": "TA_Tag_Service",
+          "router": "/tag/TagApplication/tagService",
+          "icon": "server",
+          "cn": "标签服务",
+          "code": "TA_Tag_Service_Nav"
+        }
+      }
+    },
+    "leaveTipRouter": ["/tag/TagFactory/tag/tagEtl/etl/"]
+  },
+  "msg": ""
+}

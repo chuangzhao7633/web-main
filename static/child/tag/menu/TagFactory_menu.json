@@ -1,0 +1,63 @@
+{
+  "code": "000000",
+  "data":[
+    {
+      "key": "TF_Data_Load",
+      "router": "/tag/TagFactory/dataSet",
+      "icon": "database",
+      "cn": "数据加载",
+      "code": "TF_Data_Load_Nav"
+    },
+    {
+      "key": "TF_Data_Dev",
+      "router": "/tag/DataFactory/ide",
+      "icon": "file-code-o",
+      "cn": "数据开发",
+      "code": "TF_Data_Dev_Nav",
+      "children": [
+        {
+          "key": "TF_Tag_Dev",
+          "parentKey": "TF_Data_Dev",
+          "router": "/tag/TagFactory/tag",
+          "icon": "file-code-o",
+          "cn": "标签开发",
+          "code": "TF_Tag_Dev_Nav"
+        },
+        {
+          "key": "TF_Tag_Monitor",
+          "parentKey": "TF_Data_Dev",
+          "router": "/tag/TagFactory/tagMonitor",
+          "icon": "file-code-o",
+          "cn": "标签监控",
+          "code": "TF_Tag_Monitor_Nav"
+        }
+      ]
+    },
+    {
+      "key":"TF_Audit_Manage",
+      "router": "/tag/TagFactory/dataQuality",
+      "icon": "cube",
+      "cn": "质量管理",
+      "code": "TF_Audit_Manage_Nav",
+      "children": [
+        {
+          "key": "TF_Tag_Audi",
+          "parentKey": "TF_Audit_Manage",
+          "router": "/tag/TagFactory/dataQuality/qualityManage",
+          "icon": "subscript",
+          "cn": "标签质量稽核",
+          "code": "TF_Tag_Audit_Nav"
+        },
+        {
+          "key": "TF_Tag_Quality_Monitor",
+          "parentKey": "TF_Audit_Manage",
+          "router": "/tag/TagFactory/dataQuality/qualityMonitor",
+          "icon": "subscript",
+          "cn": "质量监控",
+          "code": "TF_Tag_Quality_Monitor_Nav"
+        }
+      ]
+    }
+  ],
+  "msg": ""
+}

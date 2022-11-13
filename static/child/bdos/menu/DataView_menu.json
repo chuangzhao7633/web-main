@@ -1,0 +1,445 @@
+{
+  "code": "000000",
+  "data": {
+    "admin": [
+      {
+        "key": "DV_Access_View",
+        "router": "/bdos/DataView/datafullview/fullview",
+        "icon": "icon-piechart-circle-fil",
+        "cn": "资产视图",
+        "code": "DV_AccessView_Nav"
+      },
+      {
+        "key": "DM_DataMap",
+        "router": "/bdos/DataView/dataMap",
+        "icon": "icon-boxplot-fill",
+        "cn": "数据地图",
+        "code": "DV_DataMap_Nav"
+      },
+      {
+        "key": "DV_MasterData",
+        "router": "/bdos/DataView/masterDataManage",
+        "icon": "icon-build-fill",
+        "cn": "主数据",
+        "code": "DV_MasterData_Nav",
+        "children": [
+          {
+            "key": "DV_MD_Table_Manage",
+            "router": "/bdos/DataView/masterDataManage/TableManage",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据表管理",
+            "code": "DV_MasterData_TbManage_Nav"
+          },
+          {
+            "key": "DV_MD_Table_Approval",
+            "router": "/bdos/DataView/masterDataManage/TableApproval",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据表审批",
+            "code": "DV_MasterData_TbApproval_Nav"
+          },
+          {
+            "key": "DV_MD_Report",
+            "router": "/bdos/DataView/masterDataManage/Report",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据上报",
+            "code": "DV_MD_Report_Nav"
+          },
+          {
+            "key": "DV_MD_Maintain",
+            "router": "/bdos/DataView/masterDataManage/Maintenance",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据维护",
+            "code": "DV_MD_Maintain_Nav"
+          },
+          {
+            "key": "DV_MD_Search",
+            "router": "/bdos/DataView/masterDataManage/Search",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据查询",
+            "code": "DV_MD_Search_Nav"
+          },
+          {
+            "key": "DV_MD_Approval",
+            "router": "/bdos/DataView/masterDataManage/DataApproval",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据审批",
+            "code": "DV_MD_Approval_Nav"
+          },
+          {
+            "key": "DV_MD_Distribute",
+            "router": "/bdos/DataView/masterDataManage/Distribute",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据分发",
+            "code": "DV_MD_Distribute_Nav"
+          },
+          {
+            "key": "DV_MD_Approval_Config",
+            "router": "/bdos/DataView/masterDataManage/ConfigManage",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据审批配置",
+            "code": "DV_MD_Approval_Config_Nav"
+          },
+          {
+            "key": "DV_MD_Change_Log",
+            "router": "/bdos/DataView/masterDataManage/LogChange",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "变更日志",
+            "code": "DV_MD_Change_Log_Nav"
+          },
+          {
+            "key": "DV_MD_Distribute_Log",
+            "router": "/bdos/DataView/masterDataManage/LogDistribute",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "分发日志",
+            "code": "DV_MD_Distribute_Log_Nav"
+          }
+        ]
+      },
+      {
+        "key":"DA_DataAsset",
+        "router": "/DataAssetManage",
+        "icon": "icon-gold",
+        "cn": "数据资产管理",
+        "code": "DA_DataAsset_Manage",
+        "children": [
+          {
+            "key":"DA_DataAsset_Grade",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Grade",
+            "router": "/DataAssetManage/dataAsset/grade",
+            "cn": "数据分级管理"
+          },
+          {
+            "key":"DA_DataAsset_Class",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Class",
+            "router": "/DataAssetManage/dataAsset/class",
+            "cn": "数据分类管理"
+          },
+          {
+            "key":"DA_DataAsset_Tag",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Tag",
+            "router": "/DataAssetManage/dataAsset/Tag",
+            "cn": "数据标签管理"
+          },
+          {
+            "key":"DA_DataAsset_RetrievalConfig",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_RetrievalConfig",
+            "router": "/DataAssetManage/dataAsset/RetrievalConfig",
+            "cn": "资产检索配置"
+          },
+          {
+            "key":"DA_DataAsset_SearchConfig",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_SearchConfig",
+            "router": "/DataAssetManage/dataAsset/searchConfig",
+            "cn": "数据搜索配置"
+          }
+        ]
+      }
+    ],
+    "tenant": [
+      {
+        "key": "DV_Access_View",
+        "router": "/bdos/DataView/datafullview/fullview",
+        "icon": "icon-piechart-circle-fil",
+        "cn": "资产视图",
+        "code": "DV_AccessView_Nav"
+      },
+      {
+        "key": "DM_DataMap",
+        "router": "/bdos/DataView/dataMap",
+        "icon": "icon-boxplot-fill",
+        "cn": "数据地图",
+        "code": "DV_DataMap_Nav"
+      },
+      {
+        "key": "DV_MasterData",
+        "router": "/bdos/DataView/masterDataManage",
+        "icon": "icon-build-fill",
+        "cn": "主数据",
+        "code": "DV_MasterData_Nav",
+        "children": [
+          {
+            "key": "DV_MD_Table_Manage",
+            "router": "/bdos/DataView/masterDataManage/TableManage",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据表管理",
+            "code": "DV_MasterData_TbManage_Nav"
+          },
+          {
+            "key": "DV_MD_Table_Approval",
+            "router": "/bdos/DataView/masterDataManage/TableApproval",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据表审批",
+            "code": "DV_MasterData_TbApproval_Nav"
+          },
+          {
+            "key": "DV_MD_Report",
+            "router": "/bdos/DataView/masterDataManage/Report",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据上报",
+            "code": "DV_MD_Report_Nav"
+          },
+          {
+            "key": "DV_MD_Maintain",
+            "router": "/bdos/DataView/masterDataManage/Maintenance",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据维护",
+            "code": "DV_MD_Maintain_Nav"
+          },
+          {
+            "key": "DV_MD_Search",
+            "router": "/bdos/DataView/masterDataManage/Search",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据查询",
+            "code": "DV_MD_Search_Nav"
+          },
+          {
+            "key": "DV_MD_Approval",
+            "router": "/bdos/DataView/masterDataManage/DataApproval",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据审批",
+            "code": "DV_MD_Approval_Nav"
+          },
+          {
+            "key": "DV_MD_Distribute",
+            "router": "/bdos/DataView/masterDataManage/Distribute",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据分发",
+            "code": "DV_MD_Distribute_Nav"
+          },
+          {
+            "key": "DV_MD_Approval_Config",
+            "router": "/bdos/DataView/masterDataManage/ConfigManage",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据审批配置",
+            "code": "DV_MD_Approval_Config_Nav"
+          },
+          {
+            "key": "DV_MD_Change_Log",
+            "router": "/bdos/DataView/masterDataManage/LogChange",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "变更日志",
+            "code": "DV_MD_Change_Log_Nav"
+          },
+          {
+            "key": "DV_MD_Distribute_Log",
+            "router": "/bdos/DataView/masterDataManage/LogDistribute",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "分发日志",
+            "code": "DV_MD_Distribute_Log_Nav"
+          }
+        ]
+      },
+      {
+        "key":"DA_DataAsset",
+        "router": "/DataAssetManage",
+        "icon": "icon-gold",
+        "cn": "数据资产管理",
+        "code": "DA_DataAsset_Manage",
+        "children": [
+          {
+            "key":"DA_DataAsset_Grade",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Grade",
+            "router": "/DataAssetManage/dataAsset/grade",
+            "cn": "数据分级管理"
+          },
+          {
+            "key":"DA_DataAsset_Class",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Class",
+            "router": "/DataAssetManage/dataAsset/class",
+            "cn": "数据分类管理"
+          },
+          {
+            "key":"DA_DataAsset_Tag",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Tag",
+            "router": "/DataAssetManage/dataAsset/Tag",
+            "cn": "数据标签管理"
+          },
+          {
+            "key":"DA_DataAsset_RetrievalConfig",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_RetrievalConfig",
+            "router": "/DataAssetManage/dataAsset/RetrievalConfig",
+            "cn": "资产检索配置"
+          },
+          {
+            "key":"DA_DataAsset_SearchConfig",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_SearchConfig",
+            "router": "/DataAssetManage/dataAsset/searchConfig",
+            "cn": "数据搜索配置"
+          }
+        ]
+      }
+    ],
+    "user": [
+      {
+        "key": "DV_Access_View",
+        "router": "/bdos/DataView/datafullview/fullview",
+        "icon": "icon-piechart-circle-fil",
+        "cn": "资产视图",
+        "code": "DV_AccessView_Nav"
+      },
+      {
+        "key": "DM_DataMap",
+        "router": "/bdos/DataView/dataMap",
+        "icon": "icon-boxplot-fill",
+        "cn": "数据地图",
+        "code": "DV_DataMap_Nav"
+      },
+      {
+        "key": "DV_MasterData",
+        "router": "/bdos/DataView/masterDataManage",
+        "icon": "icon-build-fill",
+        "cn": "主数据",
+        "code": "DV_MasterData_Nav",
+        "children": [
+          {
+            "key": "DV_MD_Table_Manage",
+            "router": "/bdos/DataView/masterDataManage/TableManage",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据表管理",
+            "code": "DV_MasterData_TbManage_Nav"
+          },
+          {
+            "key": "DV_MD_Report",
+            "router": "/bdos/DataView/masterDataManage/Report",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据上报",
+            "code": "DV_MD_Report_Nav"
+          },
+          {
+            "key": "DV_MD_Maintain",
+            "router": "/bdos/DataView/masterDataManage/Maintenance",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据维护",
+            "code": "DV_MD_Maintain_Nav"
+          },
+          {
+            "key": "DV_MD_Search",
+            "router": "/bdos/DataView/masterDataManage/Search",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据查询",
+            "code": "DV_MD_Search_Nav"
+          },
+          {
+            "key": "DV_MD_Approval",
+            "router": "/bdos/DataView/masterDataManage/DataApproval",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据审批",
+            "code": "DV_MD_Approval_Nav"
+          },
+          {
+            "key": "DV_MD_Distribute",
+            "router": "/bdos/DataView/masterDataManage/Distribute",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据分发",
+            "code": "DV_MD_Distribute_Nav"
+          },
+          {
+            "key": "DV_MD_Approval_Config",
+            "router": "/bdos/DataView/masterDataManage/ConfigManage",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "主数据审批配置",
+            "code": "DV_MD_Approval_Config_Nav"
+          },
+          {
+            "key": "DV_MD_Change_Log",
+            "router": "/bdos/DataView/masterDataManage/LogChange",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "变更日志",
+            "code": "DV_MD_Change_Log_Nav"
+          },
+          {
+            "key": "DV_MD_Distribute_Log",
+            "router": "/bdos/DataView/masterDataManage/LogDistribute",
+            "icon": "",
+            "parentKey": "DV_MasterData",
+            "cn": "分发日志",
+            "code": "DV_MD_Distribute_Log_Nav"
+          }
+        ]
+      },
+      {
+        "key":"DA_DataAsset",
+        "router": "/DataAssetManage",
+        "icon": "icon-gold",
+        "cn": "数据资产管理",
+        "code": "DA_DataAsset_Manage",
+        "children": [
+          {
+            "key":"DA_DataAsset_Grade",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Grade",
+            "router": "/DataAssetManage/dataAsset/grade",
+            "cn": "数据分级管理"
+          },
+          {
+            "key":"DA_DataAsset_Class",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Class",
+            "router": "/DataAssetManage/dataAsset/class",
+            "cn": "数据分类管理"
+          },
+          {
+            "key":"DA_DataAsset_Tag",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_Tag",
+            "router": "/DataAssetManage/dataAsset/Tag",
+            "cn": "数据标签管理"
+          },
+          {
+            "key":"DA_DataAsset_RetrievalConfig",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_RetrievalConfig",
+            "router": "/DataAssetManage/dataAsset/RetrievalConfig",
+            "cn": "资产检索配置"
+          },
+          {
+            "key":"DA_DataAsset_SearchConfig",
+            "parentKey": "DA_DataAsset",
+            "code": "DA_DataAsset_SearchConfig",
+            "router": "/DataAssetManage/dataAsset/searchConfig",
+            "cn": "数据搜索配置" 
+          }
+        ]
+      }
+    ]
+  },
+  "msg": ""
+}

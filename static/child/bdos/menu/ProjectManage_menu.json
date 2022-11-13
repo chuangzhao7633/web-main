@@ -1,0 +1,20 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "key": "CC_Project_Manage",
+      "router": "/bdos/ConfigCenter/projectManage",
+      "icon": "icon-project",
+      "cn": "项目管理",
+      "code": "CC_Project_Manage_Nav"
+    },
+    {
+      "key": "CC_DataMirror",
+      "router": "/bdos/ConfigCenter/dataMirror",
+      "icon": "icon-project",
+      "cn": "数据镜像",
+      "code": "CC_DataMirror_Nav"
+    }
+  ],
+  "msg": ""
+}

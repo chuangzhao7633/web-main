@@ -1,0 +1,122 @@
+{
+  "code": "000000",
+  "data": {
+    "admin": {
+      "control": [
+        {
+          "key": "Tenant_Manage",
+          "router": "/SecurityCenter/Tenant",
+          "icon": "icon-zuhu",
+          "cn": "租户管理"
+        },
+        {
+          "key": "User_Manage",
+          "router": "/SecurityCenter/User",
+          "icon": "icon-user",
+          "cn": "用户管理"
+        },
+        {
+          "key": "Role_Manage",
+          "router": "/SecurityCenter/Role",
+          "icon": "icon-jiaose",
+          "cn": "角色管理"
+        },
+        {
+          "key": "Authority_Approval",
+          "router": "/SecurityCenter/Approval",
+          "icon": "icon-carryout",
+          "cn": "权限审批"
+        }
+      ],
+      "unControl": [
+        {
+          "key": "Tenant_Manage",
+          "router": "/SecurityCenter/Tenant",
+          "icon": "icon-zuhu",
+          "cn": "租户管理"
+        },
+        {
+          "key": "User_Manage",
+          "router": "/SecurityCenter/User",
+          "icon": "icon-user",
+          "cn": "用户管理"
+        },
+        {
+          "key": "Role_Manage",
+          "router": "/SecurityCenter/Role",
+          "icon": "icon-jiaose",
+          "cn": "角色管理"
+        },
+        {
+          "key": "Authority_Approval",
+          "router": "/SecurityCenter/Approval",
+          "icon": "icon-carryout",
+          "cn": "权限审批"
+        }
+      ]
+    },
+    "tenant": {
+      "control": [
+        {
+          "key": "User_Manage",
+          "router": "/SecurityCenter/User",
+          "icon": "icon-cluster",
+          "cn": "用户管理"
+        },
+        {
+          "key": "Role_Manage",
+          "router": "/SecurityCenter/Role",
+          "icon": "icon-cluster",
+          "cn": "角色管理"
+        },
+        {
+          "key": "My_Authority",
+          "router": "/SecurityCenter/MyAuth/Function",
+          "icon": "icon-cluster",
+          "cn": "我的权限"
+        },
+        {
+          "key": "Authority_Approval",
+          "router": "/SecurityCenter/Approval",
+          "icon": "icon-cluster",
+          "cn": "权限审批"
+        }
+      ],
+      "unControl": [
+        {
+          "key": "User_Manage",
+          "router": "/SecurityCenter/User",
+          "icon": "icon-cluster",
+          "cn": "用户管理"
+        },
+        {
+          "key": "Role_Manage",
+          "router": "/SecurityCenter/Role",
+          "icon": "icon-cluster",
+          "cn": "角色管理"
+        },
+        {
+          "key": "My_Authority",
+          "router": "/SecurityCenter/MyAuth/Function",
+          "icon": "icon-cluster",
+          "cn": "我的权限"
+        },
+        {
+          "key": "Authority_Approval",
+          "router": "/SecurityCenter/Approval",
+          "icon": "icon-cluster",
+          "cn": "权限审批"
+        }
+      ]
+    },
+    "user": [
+      {
+        "key": "My_Authority",
+        "router": "/SecurityCenter/MyAuth/Function",
+        "icon": "icon-cluster",
+        "cn": "我的权限"
+      }
+    ]
+  },
+  "msg": ""
+}

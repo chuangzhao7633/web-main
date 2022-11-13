@@ -1,0 +1,66 @@
+{
+  "code": "000000",
+  "data": {
+    "admin": [
+      {
+        "key": "CC_Cluster_Manage",
+        "router": "/bdos/SystemConfig/Cluster",
+        "icon": "icon-cluster",
+        "cn": "计算组件管理"
+      },
+      {
+        "key": "CC_Extension_Component_Manage",
+        "router": "/bdos/SystemConfig/Extension",
+        "icon": "icon-appstoreadd",
+        "cn": "扩展组件管理"
+      },
+      {
+        "key": "Exterior",
+        "router": "/SystemConfig/Exterior",
+        "icon": "icon-skin-fill",
+        "cn": "外观管理"
+      },
+      {
+        "key": "Sys_EmailConf",
+        "router": "/SystemConfig/SysEmailConf",
+        "icon": "icon-mail",
+        "cn": "系统邮箱配置"
+      },
+      {
+        "key": "Menu_Manage",
+        "router": "/SystemConfig/MenuManage",
+        "icon": "icon-menu",
+        "cn": "菜单管理"
+      }
+    ],
+    "tenant": [
+      {
+        "key": "CC_Cluster_Manage",
+        "router": "/bdos/SystemConfig/Cluster",
+        "icon": "icon-cluster",
+        "cn": "计算组件管理"
+      },
+      {
+        "key": "CC_Extension_Component_Manage",
+        "router": "/bdos/SystemConfig/Extension",
+        "icon": "icon-appstoreadd",
+        "cn": "扩展组件管理"
+      },
+      {
+        "key": "Exterior",
+        "router": "/SystemConfig/Exterior",
+        "icon": "icon-skin-fill",
+        "cn": "外观管理"
+      }
+    ],
+    "user": [
+      {
+        "key": "Exterior",
+        "router": "/SystemConfig/Exterior",
+        "icon": "icon-skin-fill",
+        "cn": "外观管理"
+      }
+    ]
+  },
+  "msg": ""
+}

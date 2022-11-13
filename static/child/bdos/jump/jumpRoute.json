@@ -1,0 +1,199 @@
+{
+  "code": "000000",
+  "data": {
+    "jumpRouter": {
+      "/bdos/DataFactory/ide/ide": {  "//": "从其他顶部菜单或左侧菜单跳转到当前设置的url，有的话配置，没有就不配置",
+        "topKey": "DataFactory",  "//": "顶部菜单code",
+        "leftMenu": { "//": "路由对应的左侧菜单",
+          "key": "DF_IDE_Manage",
+          "parentKey": "DF_OfflineData_Dev",
+          "router": "/bdos/DataFactory/ide/ide",
+          "cn": "脚本开发",
+          "code": "Ide_Dev_Nav"
+        }
+      },
+      "/bdos/DataManage/searchData/searchScript": {
+        "topKey": "DataManage",
+        "leftMenu":{
+          "key":"DM_Script",
+          "parentKey": "DM_MetaData",
+          "router": "/bdos/DataManage/searchData/searchScript",
+          "cn": "脚本"
+        }
+      },
+      "/bdos/DataView/searchData/searchTable": {
+        "isOpenNew": true,
+        "topKey": "DataView",
+        "leftMenu":{
+          "key": "DV_Access_View",
+          "router": "/bdos/DataView/datafullview/fullview",
+          "icon": "icon-piechart-circle-fil",
+          "cn": "资产视图",
+          "code": "DV_AccessView_Nav"
+        }
+      },
+      "/bdos/DataManage/searchData/searchWorkflow": {
+        "topKey": "DataManage",
+        "leftMenu":{
+          "key":"DM_Workflow",
+          "parentKey": "DM_MetaData",
+          "router": "/bdos/DataManage/searchData/searchWorkflow",
+          "cn": "工作流"
+        }
+      },
+      "/bdos/DataManage/dataQuality/auditConfig": {
+        "topKey": "DataManage",
+        "leftMenu": {
+          "key": "DM_DataQuality",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityManage",
+          "cn": "数据质量稽核",
+          "code": "DM_QM_Audit"
+        }
+      },
+      "/bdos/DataManage/dataQuality/qualityManage": {
+        "topKey": "DataManage",
+        "leftMenu": {
+          "key": "DM_DataQuality",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityManage",
+          "cn": "数据质量稽核",
+          "code": "DM_QM_Audit"
+        }
+      },
+      "/bdos/DataManage/dataQuality/nameNorm": {
+        "topKey": "DataManage",
+        "leftMenu": {
+          "key": "DM_NameNormAudit",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/nameNorm",
+          "cn": "命名标准稽核",
+          "code": "DM_QM_NormAudit"
+        }
+      },
+      "/bdos/DataManage/dataQuality/qualityMonitor/tableHistory": {
+        "topKey": "DataManage",
+        "leftMenu": {
+          "key": "DM_QualityMonitor",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityMonitor",
+          "cn": "质量监控",
+          "code": "DM_QM_Monitor"
+        }
+      },
+      "/bdos/DataManage/dataQuality/qualityMonitor/tableDetail": {
+        "topKey": "DataManage",
+        "leftMenu": {
+          "key": "DM_QualityMonitor",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityMonitor",
+          "cn": "质量监控",
+          "code": "DM_QM_Monitor"
+        }
+      },
+      "/bdos/DataManage/dataQuality/qualityMonitor": {
+        "topKey": "DataManage",
+        "leftMenu": {
+          "key": "DM_QualityMonitor",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityMonitor",
+          "cn": "质量监控",
+          "code": "DM_QM_Monitor"
+        }
+      },
+      "/bdos/DataManage/dataQuality/qualityMonitor/normDetail": {
+        "topKey": "DataManage",
+        "leftMenu": {
+          "key": "DM_QualityMonitor",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityMonitor",
+          "cn": "质量监控",
+          "code": "DM_QM_Monitor"
+        }
+      },
+      "/bdos/DataFactory/workflow/workflowProtect/europa/:param": {
+        "isOpenNew": true, "//": "是否新打开窗口显示",
+        "topKey": "DataFactory",
+        "leftMenu": {
+          "key": "DF_Workflow_Protect",
+          "parentKey": "DF_Workflow",
+          "router": "/bdos/DataFactory/workflow/workflowProtect",
+          "cn": "工作流维护",
+          "code": "Workflow_Maintain_Nav"
+        }
+      },
+      "/bdos/DataFactory/workflow/workflowMonitor": {
+        "isOpenNew": true,
+        "topKey": "DataFactory",
+        "leftMenu": {
+          "key": "DF_Workflow_Monitor",
+          "parentKey": "DF_Workflow",
+          "router": "/bdos/DataFactory/workflow/workflowMonitor",
+          "cn": "工作流监控",
+          "code": "Workflow_Monitor_Nav"
+        }
+      },
+      "/bdos/DataFactory/workflow/workflowMonitor/europa/:param": {
+        "isOpenNew": true, "//": "是否新打开窗口显示",
+        "topKey": "DataFactory",
+        "leftMenu": {
+          "key": "DF_Workflow_Monitor",
+          "parentKey": "DF_Workflow",
+          "router": "/bdos/DataFactory/workflow/workflowMonitor",
+          "cn": "工作流监控",
+          "code": "Workflow_Monitor_Nav"
+        }
+      },
+      "/etl/TagFactory/tagMonitor": {
+        "topKey": "DataFactory",
+        "leftMenu": {
+          "key": "DF_ETL_Monitor",
+          "parentKey": "DF_OfflineData_Dev",
+          "router": "/etl/TagFactory/tagMonitor",
+          "cn": "ETL监控",
+          "code": "ETL_Monitor_Nav"
+        }
+      },
+      "/DataAccess/structure/db": {
+        "isOpenNew": true, "//": "是否新打开窗口显示",
+        "topKey": "DataAccess",
+        "leftMenu": {
+          "key":"DA_Database_DataAccess",
+          "parentKey": "DA_Structure_Data_Access",
+          "router": "/DataAccess/structure/db",
+          "cn": "数据库数据接入",
+          "code": "DA_Database_DataAccess_Nav"
+        }
+      },
+      "/ConfigCenter/business": {
+        "isOpenNew": true, "//": "是否新打开窗口显示",
+        "topKey": "ConfigCenter",
+        "leftMenu": {
+          "key":"DA_BusinessSystemManage",
+          "cn":"业务系统管理",
+          "icon":"icon-file-text",
+          "code":"DA_BusinessSystemManage_Nav",
+          "router":"/ConfigCenter/business"
+        }
+      },
+      "/bdos/ModelDev/LogicalModel": {
+        "isOpenNew": true, "//": "是否新打开窗口显示",
+        "topKey": "ModelDev",
+        "leftMenu": {
+          "key":"ModelDev_LogicalModel",
+          "router": "/bdos/ModelDev/LogicalModel",
+          "icon": "icon-CodeSandbox",
+          "cn": "逻辑模型",
+          "code": "Logical_Model_Nav"
+        }
+      }
+    },
+    "leaveTipRouter": [
+      "/bdos/DataFactory/workflow/workflowProtect/europa/",
+      "/bdos/DataFactory/ide/ide",
+      "/bdos/ModelDev/LogicalModel",
+      "/etl/TagFactory/tag/tagEtl/etl"
+    ]
+  },
+  "msg": ""
+}

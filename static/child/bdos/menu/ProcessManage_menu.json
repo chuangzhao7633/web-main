@@ -1,0 +1,84 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "key":"MLlib_Home",
+      "cn":"首页",
+      "icon":"icon-home",
+      "code":"MLlib_Home_Nav",
+      "router":"/bdos/MachineLearning/Home"
+    },
+    {
+      "key":"MLlib_ModelExperiment",
+      "cn":"模型实验",
+      "icon":"icon-apartment",
+      "router":"/bdos/MachineLearning/ModelExperiment",
+      "code":"MLlib_ModelExperiment_Nav"
+    },
+    {
+      "key":"MLlib_ModelManage",
+      "cn":"模型管理",
+      "icon":"icon-appstore",
+      "router":"/bdos/MachineLearning/ModelManage",
+      "code":"MLlib_ModelManage_Nav"
+    },
+    {
+      "key":"MLlib_TemplateManage",
+      "cn":"模板管理",
+      "icon":"icon-pic-right",
+      "router":"/bdos/MachineLearning/TemplateManage",
+      "code":"MLlib_TemplateManage_Nav"
+    },
+    {
+      "key":"MLlib_CustomCPManage",
+      "cn":"自定义组件管理",
+      "icon":"icon-audit",
+      "router":"/bdos/MachineLearning/CustomCPManage",
+      "code":"MLlib_CustomCPManage_Nav",
+      "children": [
+        {
+          "key":"MLlib_PackageManage",
+          "parentKey": "MLlib_CustomCPManage",
+          "cn":"算法管理",
+          "router":"/bdos/MachineLearning/PackageManage",
+          "code":"MLlib_PackageManage_Nav"
+        },
+        {
+          "key":"MLlib_ComponentManage",
+          "parentKey": "MLlib_CustomCPManage",
+          "cn":"组件管理",
+          "router":"/bdos/MachineLearning/ComponentManage",
+          "code":"MLlib_ComponentManage_Nav"
+        }
+      ]
+    },{
+      "key":"MLlib_DataIntegration",
+      "cn":"数据集成",
+      "icon":"icon-Field-Binary",
+      "router":"/MachineLearning/DataIntegration",
+      "code":"MLlib_DataIntegration_Nav",
+      "children": [
+        {
+          "key":"MLlib_DataUpload",
+          "parentKey": "MLlib_DataIntegration",
+          "cn":"数据上传",
+          "router":"/bdos/MachineLearning/DataUpload",
+          "code":"MLlib_DataUpload_Nav"
+        }
+      ]
+    },{
+      "key":"MLlib_PutManage",
+      "cn":"任务管理",
+      "icon":"icon-unorderedlist",
+      "router":"/bdos/MachineLearning/PutManage",
+      "code":"MLlib_PutManage_Nav"
+    },{
+      "key":"MLlib_PutMonitoring",
+      "cn":"任务监控",
+      "icon":"icon-stock",
+      "router":"/bdos/MachineLearning/PutMonitoring",
+      "code":"MLlib_PutMonitoring_Nav"
+    }
+  ],
+  "msg": ""
+}

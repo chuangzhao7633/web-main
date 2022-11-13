@@ -1,0 +1,33 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "router": "/ConfigCenter/business",
+      "topMenu": {
+        "code": "101",
+        "pageRefType": 1,
+        "url": "/ConfigCenter"
+      }
+    },
+    {
+      "router": "/bdos/DataView/masterDataManage/TableManage",
+      "isNewPage": false,
+      "topMenu": {
+        "code": "101",
+        "pageRefType": 1,
+        "url": "/DataView"
+      },
+      "leftMenu": {  
+        "code": "10103",  
+        "pageRefType": 1,   "//": "菜单页面嵌入类型(1:内部路由; 2:外部新页签; 3:外部嵌入页面)",
+        "router": "/bdos/DataView/masterDataManage",
+        "url": "/bdos/DataView/masterDataManage"
+      }
+    },
+    {
+      "router": "/bdos/DataView/masterDataManage"
+    }
+  
+  ],
+  "msg": ""
+}

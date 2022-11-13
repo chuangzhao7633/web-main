@@ -15,9 +15,12 @@ module.exports = () => merge(base(false), {
   },
   devServer: {
     host: 'localhost',
-    port: 3001,
+    port: 5001,
     open: true,
     hot: true,
+    client: {
+      overlay: true,
+    },
     historyApiFallback: true, // 解决前端路由刷新 404 问题
     headers: {
 			'Access-Control-Allow-Origin': '*'

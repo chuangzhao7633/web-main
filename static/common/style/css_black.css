@@ -5,7 +5,7 @@
   --basic-font-color: #B8C3E7; /* body字体颜色, modal框文字颜色 */
   --basic-primary-color: #00DEFF;
   --basic-primary-fill-color: #0da1bd;
-  --basic-primary-fill-hover-color: #00bfdb;
+  --basic-primary-fill-hover-color: #00webb;
   --basic-default-fill-color: #1B1D28;
   --basic-disabled-font-color: #50546d;
   --basic-disabled-bg-color: #2c2e40;
@@ -179,7 +179,7 @@
   --a-active-font-color: var(--basic-primary-fill-color);
   --a-disabled-font-color: var(--basic-disabled-font-color);
 
-  /* bfd-row 选择，单选相关设置 例如：物理模型处*/
+  /* web-row 选择，单选相关设置 例如：物理模型处*/
   --row-select-bg-color: var(--basic-container-bg-color);
   --row-select-color: var(--basic-font-color);
   --row-select-hover-bg-color: var(--basic-container-element-hover-bg-color);
@@ -268,7 +268,7 @@
   --picker-cell-color: #5e6681;
   --picker-cell-hover-bg-color: #3d4054;
   --picker-cell-disabled-bg-color: #50546d;
-  --picker-selected-cell-inside-bg-color: #19738b; /* bfd组件使用 */
+  --picker-selected-cell-inside-bg-color: #19738b; /* web组件使用 */
 
   /* radio相关设置 */
   --radio-font-color: var(--basic-font-color); /* radio字体颜色 */
@@ -445,7 +445,7 @@
   --tree-toggle-icon-color: var(--basic-font-color); /*树toggle图标颜色*/
   /*--tree-node-icon-color: #7188DF; !*树图标颜色*!*/
   --tree-node-icon-color: #00FF9C; /*树图标颜色*/
-  --tree-node-disabled-font-color: #B8BFD1; /*树 结点diabled字体颜色*/
+  --tree-node-disabled-font-color: #B8web1; /*树 结点diabled字体颜色*/
 
   /* 编辑/查看非弹框单独页-样式变量 */
   --edit-page-bg-color: var(--basic-container-bg-color); /* 编辑/查看非弹框单独页-背景颜色 */

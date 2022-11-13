@@ -1,0 +1,316 @@
+{
+  "code": "000000",
+  "data": {
+    "admin": {
+      "control": [
+        {
+          "key": "Cluster_Auth_Manage",
+          "router": "/SecurityCenter",
+          "icon": "icon-key1",
+          "cn": "集群权限管理",
+          "children": [
+            {
+              "key": "Cluster_Account_Manage",
+              "parentKey": "Cluster_Auth_Manage",
+              "router": "/SecurityCenter/ClusterAccount",
+              "icon": "icon-cluster",
+              "cn": "集群账户管理"
+            },
+            {
+              "key": "Data_Policy_Hive",
+              "parentKey": "Cluster_Auth_Manage",
+              "router": "/SecurityCenter/DataPolicy/Hive",
+              "icon": "icon-cluster",
+              "cn": "Hive数据策略"
+            },
+            {
+              "key": "Data_Policy_HBase",
+              "parentKey": "Cluster_Auth_Manage",
+              "router": "/SecurityCenter/DataPolicy/HBase",
+              "icon": "icon-cluster",
+              "cn": "HBase数据策略"
+            },
+            {
+              "key": "Data_Policy_HDFS",
+              "parentKey": "Cluster_Auth_Manage",
+              "router": "/SecurityCenter/DataPolicy/HDFS",
+              "icon": "icon-cluster",
+              "cn": "HDFS数据策略"
+            }
+          ]
+        },
+        {
+          "key": "Tenant_Manage",
+          "router": "/SecurityCenter/Tenant",
+          "icon": "icon-zuhu",
+          "cn": "租户管理",
+          "code": "Tenant_Manage"
+        },
+        {
+          "key": "User_Manage",
+          "router": "/SecurityCenter/User",
+          "icon": "icon-user",
+          "cn": "用户管理"
+        },
+        {
+          "key": "Role_Manage",
+          "router": "/SecurityCenter/Role",
+          "icon": "icon-jiaose",
+          "cn": "角色管理"
+        },
+        {
+          "key": "Authority_Approval",
+          "router": "/SecurityCenter/Approval",
+          "icon": "icon-carryout",
+          "cn": "权限审批"
+        },
+        {
+          "key": "Plat_Operation_Audit",
+          "router": "/SecurityCenter/OpAudit",
+          "icon": "icon-highlight",
+          "cn": "平台操作审计"
+        },
+        {
+          "key": "Data_Audit",
+          "router": "/SecurityCenter/DataAudit",
+          "icon": "icon-check-circle",
+          "cn": "数据审计"
+        }
+      ],
+      "unControl": [
+        {
+          "key": "Cluster_Auth_Manage",
+          "router": "/SecurityCenter",
+          "icon": "icon-key1",
+          "cn": "集群权限管理",
+          "children": [
+            {
+              "key": "Cluster_Account_Manage",
+              "router": "/SecurityCenter/ClusterAccount",
+              "icon": "icon-cluster",
+              "cn": "集群账户管理"
+            }
+          ]
+        },
+        {
+          "key": "Tenant_Manage",
+          "router": "/SecurityCenter/Tenant",
+          "icon": "icon-zuhu",
+          "cn": "租户管理",
+          "code": "Tenant_Manage"
+        },
+        {
+          "key": "User_Manage",
+          "router": "/SecurityCenter/User",
+          "icon": "icon-user",
+          "cn": "用户管理"
+        },
+        {
+          "key": "Role_Manage",
+          "router": "/SecurityCenter/Role",
+          "icon": "icon-jiaose",
+          "cn": "角色管理"
+        },
+        {
+          "key": "Authority_Approval",
+          "router": "/SecurityCenter/Approval",
+          "icon": "icon-carryout",
+          "cn": "权限审批"
+        },
+        {
+          "key": "Plat_Operation_Audit",
+          "router": "/SecurityCenter/OpAudit",
+          "icon": "icon-highlight",
+          "cn": "平台操作审计"
+        }
+      ]
+    },
+    "tenant": {
+      "control": [
+        {
+          "key": "User_Manage",
+          "router": "/SecurityCenter/User",
+          "icon": "icon-user",
+          "cn": "用户管理"
+        },
+        {
+          "key": "Role_Manage",
+          "router": "/SecurityCenter/Role",
+          "icon": "icon-jiaose",
+          "cn": "角色管理"
+        },
+        {
+          "key": "My_Authority",
+          "router": "/SecurityCenter/MyAuth",
+          "icon": "icon-cluster",
+          "cn": "我的权限",
+          "children": [
+            {
+              "key": "Function_Auth",
+              "parentKey": "My_Authority",
+              "router": "/SecurityCenter/MyAuth/Function",
+              "icon": "icon-cluster",
+              "cn": "功能权限"
+            },
+            {
+              "key": "Project_Auth",
+              "parentKey": "My_Authority",
+              "router": "/SecurityCenter/MyAuth/Project",
+              "icon": "icon-cluster",
+              "cn": "项目权限"
+            }
+          ]
+        },
+        {
+          "key": "Authority_Approval",
+          "router": "/SecurityCenter/Approval",
+          "icon": "icon-carryout",
+          "cn": "权限审批"
+        },
+        {
+          "key": "My_Apply",
+          "router": "/SecurityCenter/MyApply",
+          "icon": "icon-cluster",
+          "cn": "我的申请"
+        },
+        {
+          "key": "Plat_Operation_Audit",
+          "router": "/SecurityCenter/OpAudit",
+          "icon": "icon-highlight",
+          "cn": "平台操作审计"
+        },
+        {
+          "key": "Tenant_Base_Info",
+          "router": "/SecurityCenter/TenantBaseInfo",
+          "icon": "icon-cluster",
+          "cn": "租户基础信息",
+          "code": "Tenant_BaseInfo"
+        },
+        {
+          "key": "AccessKey_Manage",
+          "router": "/SecurityCenter/AccessKey",
+          "icon": "icon-cluster",
+          "cn": "AccessKey管理"
+        }
+      ],
+      "unControl": [
+        {
+          "key": "Cluster_Auth_Manage",
+          "router": "/SecurityCenter",
+          "icon": "icon-key1",
+          "cn": "集群权限管理",
+          "children": [
+            {
+              "key": "Cluster_Account_Manage",
+              "router": "/SecurityCenter/ClusterAccount",
+              "icon": "icon-cluster",
+              "cn": "集群账户管理"
+            }
+          ]
+        },
+        {
+          "key": "User_Manage",
+          "router": "/SecurityCenter/User",
+          "icon": "icon-user",
+          "cn": "用户管理"
+        },
+        {
+          "key": "Role_Manage",
+          "router": "/SecurityCenter/Role",
+          "icon": "icon-jiaose",
+          "cn": "角色管理"
+        },
+        {
+          "key": "My_Authority",
+          "router": "/SecurityCenter/MyAuth",
+          "icon": "icon-cluster",
+          "cn": "我的权限",
+          "children": [
+            {
+              "key": "Function_Auth",
+              "parentKey": "My_Authority",
+              "router": "/SecurityCenter/MyAuth/Function",
+              "icon": "icon-cluster",
+              "cn": "功能权限"
+            },
+            {
+              "key": "Project_Auth",
+              "parentKey": "My_Authority",
+              "router": "/SecurityCenter/MyAuth/Project",
+              "icon": "icon-cluster",
+              "cn": "项目权限"
+            }
+          ]
+        },
+        {
+          "key": "Authority_Approval",
+          "router": "/SecurityCenter/Approval",
+          "icon": "icon-carryout",
+          "cn": "权限审批"
+        },
+        {
+          "key": "My_Apply",
+          "router": "/SecurityCenter/MyApply",
+          "icon": "icon-cluster",
+          "cn": "我的申请"
+        },
+        {
+          "key": "Plat_Operation_Audit",
+          "router": "/SecurityCenter/OpAudit",
+          "icon": "icon-highlight",
+          "cn": "平台操作审计"
+        },
+        {
+          "key": "Tenant_Base_Info",
+          "router": "/SecurityCenter/TenantBaseInfo",
+          "icon": "icon-cluster",
+          "cn": "租户基础信息",
+          "code": "Tenant_BaseInfo"
+        },
+        {
+          "key": "AccessKey_Manage",
+          "router": "/SecurityCenter/AccessKey",
+          "icon": "icon-cluster",
+          "cn": "AccessKey管理"
+        }
+      ]
+    },
+    "user": [
+      {
+        "key": "My_Authority",
+        "router": "/SecurityCenter/MyAuth",
+        "icon": "icon-cluster",
+        "cn": "我的权限",
+        "children": [
+          {
+            "key": "Function_Auth",
+            "parentKey": "My_Authority",
+            "router": "/SecurityCenter/MyAuth/Function",
+            "icon": "icon-cluster",
+            "cn": "功能权限"
+          },
+          {
+            "key": "Project_Auth",
+            "parentKey": "My_Authority",
+            "router": "/SecurityCenter/MyAuth/Project",
+            "icon": "icon-cluster",
+            "cn": "项目权限"
+          }
+        ]
+      },
+      {
+        "key": "My_Apply",
+        "router": "/SecurityCenter/MyApply",
+        "icon": "icon-cluster",
+        "cn": "我的申请"
+      },
+      {
+        "key": "AccessKey_Manage",
+        "router": "/SecurityCenter/AccessKey",
+        "icon": "icon-cluster",
+        "cn": "AccessKey管理"
+      }
+    ]
+  },
+  "msg": ""
+}

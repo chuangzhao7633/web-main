@@ -33,7 +33,8 @@ module.exports = isProd => ({
     path: resolve('dist'),
     filename:'static/js/[name].[contenthash:8].js',
     chunkFilename: 'static/js/[name].[contenthash:8].chunk.js',
-    assetModuleFilename: 'static/images/[name].[hash:8][ext][query]'
+    assetModuleFilename: 'static/images/[name].[hash:8][ext][query]',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -51,6 +52,10 @@ module.exports = isProd => ({
             loader: 'less-loader',
             options: {
               lessOptions: {
+                modifyVars: {
+                  '@ant-prefix': 'main-ant',
+                  '@font-size-base': '12px'
+                },
                 javascriptEnabled: true
               }
             }
@@ -126,7 +131,7 @@ module.exports = isProd => ({
     // 自动补全文件扩展名
     extensions: ['.jsx', '.js', '.json'],
     alias: {
-      '@util': resolve('src/utils'),
+      '@util': resolve('src/util'),
       '@service': resolve('src/service'),
       '@component': resolve('src/components')
     }

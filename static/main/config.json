@@ -1,7 +1,7 @@
 {
   "code": "000000",
   "data": {
-    "version": "1.0",
+    "version": "5.1",
     "logoStyle": {
       "width": "200px"
     },
@@ -9,7 +9,7 @@
       "height": "100%"
     },
     "productType": 1,
-    "product": "web-main",
+    "product": "bdos",
     "apps": [
       {
         "name": "bdos",

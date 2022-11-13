@@ -1,0 +1,123 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "key": "DM_DataStandard",
+      "router": "/bdos/DataManage/datanorm",
+      "icon": "icon-Field-String",
+      "cn": "标准体系",
+      "code": "DM_DS_Nav",
+      "children": [
+        {
+          "key": "DM_Field_Manage",
+          "parentKey": "DM_DataStandard",
+          "router": "/bdos/DataManage/datanorm/fileManage",
+          "cn": "标准文件管理",
+          "code": "DM_File_Manage_Nav"
+        },
+        {
+          "key": "DM_NameNorm",
+          "parentKey": "DM_DataStandard",
+          "router": "/bdos/DataManage/datanorm/namenorm",
+          "cn": "命名标准",
+          "code": "DM_DS_NameNorm"
+        },
+        {
+          "key": "DM_DataSourceNorm",
+          "parentKey": "DM_DataStandard",
+          "router": "/bdos/DataManage/datanorm/datanorm",
+          "cn": "数据元标准",
+          "code": "DM_DS_DataNorm"
+        },
+        {
+          "key": "DM_DataDic",
+          "parentKey": "DM_DataStandard",
+          "router": "/bdos/DataManage/datanorm/datadic",
+          "cn": "编码标准",
+          "code": "DM_DS_DataDic"
+        }
+      ]
+    },
+    {
+      "key": "DM_QualityManage",
+      "router": "/bdos/DataManage/dataQuality",
+      "icon": "icon-safetycertificate",
+      "cn": "质量管理",
+      "code": "DM_QM_Nav",
+      "children": [
+        {
+          "key": "DM_QualityReport",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityReport",
+          "cn": "质量报告",
+          "code": "DM_QM_Report"
+        },
+        {
+          "key": "DM_DataQuality",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityManage",
+          "cn": "数据质量稽核",
+          "code": "DM_QM_Audit"
+        },{
+          "key": "DM_NameNormAudit",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/nameNorm",
+          "cn": "命名标准稽核",
+          "code": "DM_QM_NormAudit"
+        },
+        {
+          "key": "DM_QualityMonitor",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/qualityMonitor",
+          "cn": "质量监控",
+          "code": "DM_QM_Monitor"
+        },
+        {
+          "key": "DM_PerformanceManage",
+          "parentKey": "DM_QualityManage",
+          "router": "/bdos/DataManage/dataQuality/performance",
+          "cn": "数据质量评估",
+          "code": "DM_QM_Performance"
+        }
+      ]
+    },
+    {
+      "key":"DM_MetaData",
+      "router": "/MetaDataManage",
+      "icon": "icon-gold",
+      "cn": "元数据管理",
+      "code": "DM_MetaData_Manage",
+      "children": [
+        {
+          "key":"DM_MetaData_Collect",
+          "parentKey": "DM_MetaData",
+          "code": "DM_MetaData_Collect",
+          "router": "/MetaDataManage/metaData/collect",
+          "cn": "元数据采集"
+        },
+        {
+          "key":"DM_MetaData_Monitor",
+          "parentKey": "DM_MetaData",
+          "code": "DM_MetaData_Monitor",
+          "router": "/MetaDataManage/metaData/monitor",
+          "cn": "采集任务监控"
+        },
+        {
+          "key":"DM_MetaData_Maintain",
+          "parentKey": "DM_MetaData",
+          "code": "DM_MetaData_Maintain",
+          "router": "/MetaDataManage/metaData/maintain",
+          "cn": "元数据维护"
+        },
+        {
+          "key":"DM_MetaData_Catalog",
+          "parentKey": "DM_MetaData",
+          "code": "DM_MetaData_Catalog",
+          "router": "/MetaDataManage/metaData/catalog",
+          "cn": "元数据目录"
+        }
+      ]
+    }
+  ],
+  "msg": ""
+}

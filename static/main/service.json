@@ -1,8 +1,14 @@
 {
   "code": "000000",
   "data": {
-    "main": "http://127.0.0.1:5000",
-    "loginUrl": "http://127.0.0.1:5000/login"
+    "base": "http://127.0.0.1:5000",
+    "portal": "http://127.0.0.1:5000",
+    "bdosConfig": "http://127.0.0.1:5000",
+    "loginUrl": "http://127.0.0.1:5000",
+    "licenseUrl": "http://127.0.0.1:5000",
+    "dataSource": "http://127.0.0.1:5000",
+    "helpUrl": "http://127.0.0.1:5000",
+    "homeUrl": "http://127.0.0.1:5000"
   },
   "msg": ""
 }

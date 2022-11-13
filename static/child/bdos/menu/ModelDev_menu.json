@@ -1,0 +1,35 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "key":"ModelDev_LogicalModel",
+      "router": "/bdos/ModelDev/LogicalModel",
+      "icon": "icon-CodeSandbox",
+      "cn": "逻辑模型",
+      "code": "Logical_Model_Nav"
+    },
+    {
+      "key":"ModelDev_PhysicalModel",
+      "router": "/bdos/ModelDev/Physical",
+      "icon": "icon-CodeSandbox-circle-f",
+      "cn": "物理模型",
+      "code": "Physical_Model_Nav"
+    },
+    {
+      "key":"ModelDev_TableManager",
+      "router": "/bdos/ModelDev/TableManager",
+      "icon": "icon-table",
+      "cn": "表管理",
+      "jumpRouters": ["DataFactory"],
+      "code": "MD_Table_Manage_Nav"
+    },
+    {
+      "key":"ModelDev_Level",
+      "router": "/bdos/ModelDev/Level",
+      "icon": "icon-group",
+      "cn": "层级/主题域",
+      "code": "Level_Theme_Nav"
+    }
+  ],
+  "msg": ""
+}

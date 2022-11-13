@@ -1,29 +1,35 @@
-import React, { useEffect, Suspense, useState, lazy } from 'react';
-import ReactDOM from 'react-dom/client';
-import intl from "react-intl-universal";
+import React, { Component, Suspense } from 'react';
+import ReactDOM from 'react-dom';
+import intl from 'react-intl-universal';
 import reactCookie  from 'react-cookies';
 import { Spin, notification, message } from 'antd';
 import { resetStyle } from '@util/Utils';
-import { THEME_TYPE_LIGHT } from '@util/ConstUtil';
+import { THEME_TYPE_LIGHT, THEME_TYPE_DARK } from '@util/ConstUtil';
+import { ThemeContext } from '@util/ThemeContext';
 import { getConfig, getInitSetting } from '@service/global';
-import Icon from '@component/Icon';
+import Icon from './components/Icon';
+import './util/Flexible';
+import './util/InitObjectFunc';
 import './style/App.less';
 
-const App = lazy(() => import('./App'));
+const App = React.lazy(() => import('./App'));
+class Index extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      theme: THEME_TYPE_LIGHT,
+      configComplete: false
+    };
+  }
 
-const Index = () => {
-  const [theme, setTheme] = useState(THEME_TYPE_LIGHT);
-  const [currentUser, setCurrentUser] = useState();
-  const [configComplete, setConfigComplete] = useState(false);
-
-  useEffect(() => {
+  componentDidMount() {
     // 设置antd组件的全局配置
-    setAntGlobalConfig()
+    this.setAntGlobalConfig();
     // 设置前端的全局配置
-    setWebConfig();
-  }, []);
+    this.setWebConfig();
+  }
 
-  const setAntGlobalConfig = () => {
+  setAntGlobalConfig = () => {
     message.config({
       top: 30,
       duration: 2,
@@ -32,16 +38,17 @@ const Index = () => {
     });
   };
 
-  const setWebConfig = () => {
+  setWebConfig = () => {
     // 获取前端配置及用户信息
     getConfig((serviceRes, configRes) => {
-      window.service = serviceRes?.data;
-      window.__Conf__ = configRes?.data;
-      debugger;
+      window.service = serviceRes.data;
+      window.__Conf__ = configRes.data;
       // 获取初始化时需要的信息：用户信息，当前样式主题，页签相关信息
       getInitSetting((userRes, themeRes, docRes ) => {
+        // const _theme = process.env.NODE_ENV === 'production' ? themeRes.data || 'static/common/style/css_default.css' : 'static/common/style/css_default.css';
+        // resetStyle(_theme, process.env.NODE_ENV !== 'production' ? true : themeRes.data ? false : true);
         const themeType = resetStyle(themeRes.data);
-        setDocument(docRes.data);
+        this.setDocument(docRes.data);
         if(userRes && userRes.data.warn) {
           setTimeout(() => {
             notification.open({
@@ -53,15 +60,13 @@ const Index = () => {
           });
         }
         reactCookie.save('sessionId', userRes && userRes.data.accessToken);
-        setCurrentUser(userRes && userRes.data);
-        setConfigComplete(true);
-        setTheme(themeType);
+        this.setState({ currentUser: userRes && userRes.data, configComplete: true, theme: themeType });
       });
     });
-  }
+  };
 
   // 设置页签的图标及title
-  const setDocument = (docRes) => {
+  setDocument = (docRes) => {
     if(docRes.otherConfigJson){
       document.title = docRes.otherConfigJson.browserTitleName || '';
     }
@@ -78,23 +83,26 @@ const Index = () => {
     }
   };
 
-  return(
-    <Suspense fallback={
-      <div className="init-spin-loading">
-        <Spin spinning={!configComplete} />
-      </div>
-    }>
-      {
-        configComplete && window.service && window.__Conf__ ?
-          <App currentUser={currentUser} theme={theme} resetStyle={resetStyle} /> :
+  render() {
+    const { configComplete, theme, currentUser } = this.state;
+    return (
+      <ThemeContext.Provider value={theme}>
+        <Suspense fallback={
           <div className="init-spin-loading">
             <Spin spinning={!configComplete} />
           </div>
-      }
-    </Suspense>
-  )
+        }>
+          {
+            configComplete && window.service && window.__Conf__ ?
+              <App currentUser={currentUser} resetStyle={resetStyle} /> :
+              <div className="init-spin-loading">
+                <Spin spinning={!configComplete} />
+              </div>
+          }
+        </Suspense>
+      </ThemeContext.Provider>
+    );
+  }
 }
 
-const root = ReactDOM.createRoot(document.getElementById('web-main'));
-
-root.render(<Index />);
+ReactDOM.render(<Index />, document.getElementById('web-main'));

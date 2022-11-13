@@ -1,0 +1,186 @@
+{
+  "code": "000000",
+  "data": {
+    "mysql": [
+      {
+        "key": "DF_OfflineData_Dev",
+        "router": "/bdos/DataFactory/ide",
+        "icon": "icon-disconnect",
+        "cn": "离线数据开发",
+        "code": "Offline_Data_Dev_Nav",
+        "children": [
+          {
+            "key": "DF_IDE_Manage",
+            "parentKey": "DF_OfflineData_Dev",
+            "router": "/bdos/DataFactory/ide/ide",
+            "cn": "脚本开发",
+            "topMenu": "DataFactory", "//": "所属一级导航路由",
+            "code": "Ide_Dev_Nav"
+          },
+          {
+            "key": "DF_DataSet",
+            "parentKey": "DF_OfflineData_Dev",
+            "topMenuUrl": "/DataFactory",
+            "router": "/VisualEtl/TagFactory/dataSet",
+            "cn": "数据加载",
+            "code": "Data_Load_Nav"
+          },
+          {
+            "key": "DF_IDE_ETL",
+            "parentKey": "DF_OfflineData_Dev",
+            "router": "/VisualEtl/TagFactory/tag",
+            "cn": "可视化ETL",
+            "code": "ETL_Nav"
+          },
+          {
+            "key": "DF_ETL_Monitor",
+            "parentKey": "DF_OfflineData_Dev",
+            "router": "/VisualEtl/TagFactory/tagMonitor",
+            "cn": "ETL监控",
+            "code": "ETL_Monitor_Nav"
+          }
+        ]
+      },
+      {
+        "key": "DF_Workflow",
+        "router": "/bdos/DataFactory/workflow",
+        "icon": "icon-Partition",
+        "cn": "工作流",
+        "code": "Workflow_Nav",
+        "children": [
+          {
+            "key": "DF_Workflow_Protect",
+            "parentKey": "DF_Workflow",
+            "router": "/bdos/DataFactory/workflow/workflowProtect",
+            "cn": "工作流维护",
+            "code": "Workflow_Maintain_Nav"
+          },
+          {
+            "key": "DF_Workflow_Monitor",
+            "parentKey": "DF_Workflow",
+            "router": "/bdos/DataFactory/workflow/workflowMonitor",
+            "cn": "工作流监控",
+            "code": "Workflow_Monitor_Nav"
+          }
+        ]
+      },
+      {
+        "key": "DF_WorkMinitor",
+        "router": "/bdos/DataFactory/DataFactoryMinitor",
+        "icon": "icon-stock",
+        "cn": "作业监控",
+        "code": "Work_Monitor_Nav"
+      }
+    ],
+    "hive": [
+      {
+        "key": "DF_OfflineData_Dev",
+        "router": "/bdos/DataFactory/ide",
+        "icon": "icon-disconnect",
+        "cn": "离线数据开发",
+        "code": "Offline_Data_Dev_Nav",
+        "children": [
+          {
+            "key": "DF_IDE_Manage",
+            "parentKey": "DF_OfflineData_Dev",
+            "router": "/bdos/DataFactory/ide/ide",
+            "cn": "脚本开发",
+            "topMenu": "DataFactory", "//": "所属一级导航路由",
+            "code": "Ide_Dev_Nav"
+          },
+          {
+            "key": "DF_DataSet",
+            "parentKey": "DF_OfflineData_Dev",
+            "topMenuUrl": "/DataFactory",
+            "router": "/VisualEtl/TagFactory/dataSet",
+            "cn": "数据加载",
+            "code": "Data_Load_Nav"
+          },
+          {
+            "key": "DF_IDE_ETL",
+            "parentKey": "DF_OfflineData_Dev",
+            "router": "/VisualEtl/TagFactory/tag",
+            "cn": "可视化ETL",
+            "code": "ETL_Nav"
+          },
+          {
+            "key": "DF_ETL_Monitor",
+            "parentKey": "DF_OfflineData_Dev",
+            "router": "/VisualEtl/TagFactory/tagMonitor",
+            "cn": "ETL监控",
+            "code": "ETL_Monitor_Nav"
+          }
+        ]
+      },
+      {
+        "key": "DF_FlowDataDev",
+        "router": "/bdos/DataFactory/flowDev",
+        "icon": "icon-dash",
+        "cn": "流式数据开发",
+        "code": "Flow_Data_Dev_Nav",
+        "children": [
+          {
+            "key": "DF_FlowTaskDev",
+            "parentKey": "DF_FlowDataDev",
+            "cn": "流任务开发",
+            "code": "Flow_Task_Dev_Nav",
+            "router": "/bdos/DataFactory/FlowDev/FlowTaskDev"
+          },
+          {
+            "key": "DF_FlowTaskMonitor",
+            "parentKey": "DF_FlowDataDev",
+            "cn": "流任务监控",
+            "router": "/bdos/DataFactory/FlowDev/FlowTaskMonitor",
+            "code": "Flow_Monitor_Nav"
+          }
+        ]
+      },
+      {
+        "key": "DF_Workflow",
+        "router": "/bdos/DataFactory/workflow",
+        "icon": "icon-Partition",
+        "cn": "工作流",
+        "code": "Workflow_Nav",
+        "children": [
+          {
+            "key": "DF_Workflow_Protect",
+            "parentKey": "DF_Workflow",
+            "router": "/bdos/DataFactory/workflow/workflowProtect",
+            "cn": "工作流维护",
+            "code": "Workflow_Maintain_Nav"
+          },
+          {
+            "key": "DF_Workflow_Monitor",
+            "parentKey": "DF_Workflow",
+            "router": "/bdos/DataFactory/workflow/workflowMonitor",
+            "cn": "工作流监控",
+            "code": "Workflow_Monitor_Nav"
+          }
+        ]
+      },
+      {
+        "key": "DF_AssetsManage",
+        "router": "/bdos/DataFactory/resourceManage/resourceManage",
+        "icon": "icon-folder-open",
+        "cn": "资源管理",
+        "code": "Resource_Manage_Nav"
+      },
+      {
+        "key": "DF_FuncManage",
+        "router": "/bdos/DataFactory/resourceManage/func",
+        "icon": "icon-Function",
+        "cn": "函数管理",
+        "code": "Function_Manage_Nav"
+      },
+      {
+        "key": "DF_WorkMinitor",
+        "router": "/bdos/DataFactory/DataFactoryMinitor",
+        "icon": "icon-stock",
+        "cn": "作业监控",
+        "code": "Work_Monitor_Nav"
+      }
+    ]
+
+  },
+  "msg": ""
+}

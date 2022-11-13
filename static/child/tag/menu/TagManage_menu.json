@@ -1,0 +1,27 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "key": "TM_Entity_Manage",
+      "router": "/tag/TagManagement/entityManage",
+      "icon": "cube",
+      "cn": "实体管理",
+      "code": "TM_Entity_Manage_Nav"
+    },
+    {
+      "key": "TM_Tag_Manage",
+      "router": "/tag/TagManagement/tagManage",
+      "icon": "tag",
+      "cn": "标签管理",
+      "code": "TM_Tag_Manage_Nav"
+    },
+    {
+      "key": "TM_Tag_Approval",
+      "router": "/tag/TagManagement/tagVerify",
+      "icon": "street-view",
+      "cn": "标签审批",
+      "code": "TM_Tag_Approval_Nav"
+    }
+  ],
+  "msg": ""
+}

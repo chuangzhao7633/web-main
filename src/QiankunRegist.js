@@ -11,7 +11,6 @@ import {
 
 // 子应用注册信息
 const getApps = () => {
-  debugger;
   window.__Conf__.apps.map(_item => {
     _item.activeRuleStr = _item.activeRule;
     _item.activeRule = genActiveRule(_item.activeRule);

@@ -1,7 +1,7 @@
 {
   "code": "000000",
   "data": {
-    "version": "1.0",
+    "version": "5.1",
     "logoStyle": {
       "width": "200px"
     },
@@ -9,71 +9,77 @@
       "height": "100%"
     },
     "productType": 1,
-    "product": "web-main",
+    "product": "bdos",
+    "displayNav": {
+      "zh_CN":7,
+      "en_US":7,
+      "pt_PT":7,
+      "ru_RU":4
+    },
     "apps": [
       {
         "name": "bdos",
-        "entry": "/bdosplat/",
+        "entry": "http://localhost:7082",
         "container": "#app-container",
         "activeRule": "/bdos"
       },
       {
         "name": "DataAccess",
-        "entry": "/access/",
+        "entry": "http://localhost:7087",
         "container": "#app-container",
         "activeRule": "/DataAccess"
       },
       {
         "name": "SecurityCenter",
-        "entry": "/security/",
+        "entry": "http://localhost:7081",
         "container": "#app-container",
         "activeRule": "/SecurityCenter"
       },
       {
         "name": "VisualEtl",
-        "entry": "/etl/",
+        "entry": "http://localhost:7085",
         "container": "#app-container",
         "activeRule": "/VisualEtl"
       },
       {
         "name": "ConfigCenter",
-        "entry": "/config/",
+        "entry": "http://localhost:7084",
         "container": "#app-container",
         "activeRule": "/ConfigCenter"
       },
       {
         "name": "SystemConfig",
-        "entry": "/system/",
+        "entry": "http://localhost:7083",
         "container": "#app-container",
         "activeRule": "/SystemConfig"
       },
       {
         "name": "MetaDataManage",
-        "entry": "/metadata/",
+        "entry": "http://localhost:7086",
         "container": "#app-container",
         "activeRule": "/MetaDataManage"
       },
       {
         "name": "DataAssetManage",
-        "entry": "/dataasset/",
+        "entry": "http://localhost:7088",
         "container": "#app-container",
         "activeRule": "/DataAssetManage"
       },
       {
         "name": "DataExchange",
-        "entry": "/exchange/",
+        "entry": "http://localhost:8000",
         "container": "#app-container",
         "activeRule": "/DataExchange"
       },
       {
         "name": "OnlineReporting",
-        "entry": "/onlineReporting/",
+        "entry": "http://localhost:8081",
         "container": "#app-container",
         "activeRule": "/Online"
       },
       {
         "name": "IndexSystemManage",
-        "entry": "/indexSystem/",
+        "entry": "http://localhost:7089",
         "container": "#app-container",
         "activeRule": "/IndexSystemManage"
       }

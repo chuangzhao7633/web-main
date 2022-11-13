@@ -1,0 +1,191 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "key":"DA_Data_Exploration",
+      "router": "/DataAccess/dataExploration",
+      "icon": "icon-zichanpandian",
+      "cn": "数据探查",
+      "code": "DA_Data_Exploration_Nav",
+      "children": [
+        {
+          "key":"DA_System_Exploration",
+          "parentKey": "DA_Data_Exploration",
+          "router": "/DataAccess/dataExploration/system",
+          "cn": "系统探查",
+          "code": "DA_System_Exploration_Nav"
+        },
+        {
+          "key":"DA_Exploration_Task",
+          "parentKey": "DA_Data_Exploration",
+          "router": "/DataAccess/dataExploration/task",
+          "cn": "探查任务",
+          "code": "DA_Exploration_Task_Nav"
+        },
+        {
+          "key":"DA_Data_Definition",
+          "parentKey": "DA_Data_Exploration",
+          "router": "/DataAccess/dataExploration/ddl",
+          "cn": "数据定义",
+          "code": "DA_Data_Definition_Nav"
+        }
+      ]
+    },
+    {
+      "key":"DA_Structure_Data_Access",
+      "router": "/DataAccess/structure",
+      "icon": "icon-jiegouhuashuju",
+      "cn": "结构化数据接入",
+      "code": "DA_Structure_Data_Access_Nav",
+      "children": [
+        {
+          "key":"DA_Database_DataAccess",
+          "parentKey": "DA_Structure_Data_Access",
+          "router": "/DataAccess/structure/db",
+          "cn": "数据库数据接入",
+          "code": "DA_Database_DataAccess_Nav"
+        },
+        {
+          "key":"DA_Remote_File_DataAccess",
+          "parentKey": "DA_Structure_Data_Access",
+          "router": "/DataAccess/structure/remote",
+          "cn": "远程文件接入",
+          "code": "DA_Remote_File_DataAccess_Nav"
+        },
+        {
+          "key":"DA_File_DataAccess",
+          "parentKey": "DA_Structure_Data_Access",
+          "router": "/DataAccess/structure/file",
+          "cn": "本地文件上传",
+          "code": "DA_File_DataAccess_Nav"
+        }
+      ]
+    },
+    {
+      "key":"DA_API_DataAccess",
+      "router": "/DataAccess/apiDataAccess",
+      "icon": "icon-APIjieru",
+      "cn": "API数据接入",
+      "code": "DA_API_DataAccess_Nav"
+    },
+    {
+      "key":"DA_Unstructure_DataAccess",
+      "router": "/DataAccess/unstructure",
+      "icon": "icon-feijiegouhuashuju1",
+      "cn": "非结构化数据接入",
+      "code": "DA_Unstructure_DataAccess_Nav"
+    },
+    {
+      "key":"DA_Semistructure_DataAccess",
+      "router": "/DataAccess/semiStructure",
+      "icon": "icon-banjiegouhuashuju",
+      "cn": "半结构化数据接入",
+      "code": "DA_Semistructure_DataAccess_Nav",
+      "children": [
+        {
+          "key":"DA_Semistructure_Kafka",
+          "parentKey": "DA_Semistructure_DataAccess",
+          "router": "/DataAccess/semiStructure/kafka",
+          "cn": "kafka接入",
+          "code": "DA_Semistructure_Kafka_Nav"
+        },
+        {
+          "key":"DA_Semistructure_MongoDb",
+          "parentKey": "DA_Semistructure_DataAccess",
+          "router": "/DataAccess/semiStructure/mongoDB",
+          "cn": "mongoDB接入",
+          "code": "DA_Semistructure_MongoDb_Nav"
+        },
+        {
+          "key":"DA_Semistructure_ES",
+          "parentKey": "DA_Semistructure_DataAccess",
+          "router": "/DataAccess/semiStructure/es",
+          "cn": "ES接入",
+          "code": "DA_Semistructure_ES_Nav"
+        }
+      ]
+    },
+    {
+      "key":"DA_CDCRealTime_DataAccess",
+      "router": "/DataAccess/CDCRealTime",
+      "icon": "icon-gengxin",
+      "cn": "CDC实时接入",
+      "code": "DA_CDCRealTime_DataAccess_Nav",
+      "children": [
+        {
+          "key":"DA_CDCRealTime_DataFetch",
+          "parentKey": "DA_CDCRealTime_DataAccess",
+          "router": "/DataAccess/CDCRealTime/dataFetch",
+          "cn": "数据读取",
+          "code": "DA_CDCRealTime_DataFetch_Nav"
+        },
+        {
+          "key":"DA_CDCRealTime_DataWriting",
+          "parentKey": "DA_CDCRealTime_DataAccess",
+          "router": "/DataAccess/CDCRealTime/dataWriting",
+          "cn": "数据写入",
+          "code": "DA_CDCRealTime_DataWriting_Nav"
+        }
+      ]
+    },
+    {
+      "key":"DA_Data_Exchange",
+      "router": "/DataExchange",
+      "icon": "icon-jiaohuan",
+      "cn": "数据交换",
+      "code": "DA_Data_Exchange_Nav",
+      "children": [
+        {
+          "key":"DA_Data_Exchange_Table",
+          "parentKey": "DA_Data_Exchange",
+          "router": "/DataExchange/table",
+          "cn": "共享表管理",
+          "code": "DA_Data_Exchange_Table_Nav"
+        },
+        {
+          "key":"DA_Data_Exchange_DB",
+          "parentKey": "DA_Data_Exchange",
+          "router": "/DataExchange/db",
+          "cn": "目标库管理",
+          "code": "DA_Data_Exchange_DB_Nav"
+        },
+        {
+          "key":"DA_Data_Exchange_Task",
+          "parentKey": "DA_Data_Exchange",
+          "router": "/DataExchange/task",
+          "cn": "任务管理",
+          "code": "DA_Data_Exchange_Task_Nav"
+        },
+        {
+          "key":"DA_Data_Exchange_Monitor",
+          "parentKey": "DA_Data_Exchange",
+          "router": "/DataExchange/monitor",
+          "cn": "任务监控",
+          "code": "DA_Data_Exchange_Monitor_Nav"
+        }
+      ]
+    },
+    {
+      "key":"DA_Data_Reconciliation",
+      "cn":"数据对账",
+      "icon":"icon-shujuduizhang",
+      "code":"DA_Data_Reconciliation_Nav",
+      "router":"/DataAccess/reconciliation"
+    },
+    {
+      "key":"DA_Data_Export",
+      "cn":"数据导出",
+      "icon":"icon-daochu",
+      "code":"DA_DataAccess_Output_Nav",
+      "router":"/DataAccess/dataOutput"
+    },
+    {
+      "key":"DA_FileManage",
+      "cn":"文件管理",
+      "icon":"icon-file-text",
+      "code":"DA_FileManage_Nav",
+      "router":"/bdos/DataAccess/filemanage"
+    }
+  ],
+  "msg": ""
+}

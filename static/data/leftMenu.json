@@ -1,0 +1,109 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "key":"DA_BusinessSystemManage",
+      "cn":"业务系统管理",
+      "icon":"icon-file-text",
+      "code":"DA_BusinessSystemManage_Nav",
+      "router":"/ConfigCenter/business"
+    },
+    {
+      "key": "CC_DataSource_Manage",
+      "router": "/ConfigCenter/datasource",
+      "icon": "icon-database",
+      "cn": "数据源管理",
+      "code": "CC_DataSource_Manage_Nav"
+    },
+    {
+      "key": "DV_MasterData",
+      "router": "/bdos/DataView/masterDataManage",
+      "icon": "icon-build-fill",
+      "cn": "主数据",
+      "code": "DV_MasterData_Nav",
+      "children": [
+        {
+          "key": "DV_MD_Table_Manage",
+          "router": "/bdos/DataView/masterDataManage/TableManage",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "主数据表管理",
+          "code": "DV_MasterData_TbManage_Nav"
+        },
+        {
+          "key": "DV_MD_Table_Approval",
+          "router": "/bdos/DataView/masterDataManage/TableApproval",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "主数据表审批",
+          "code": "DV_MasterData_TbApproval_Nav"
+        },
+        {
+          "key": "DV_MD_Report",
+          "router": "/bdos/DataView/masterDataManage/Report",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "主数据上报",
+          "code": "DV_MD_Report_Nav"
+        },
+        {
+          "key": "DV_MD_Maintain",
+          "router": "/bdos/DataView/masterDataManage/Maintenance",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "主数据维护",
+          "code": "DV_MD_Maintain_Nav"
+        },
+        {
+          "key": "DV_MD_Search",
+          "router": "/bdos/DataView/masterDataManage/Search",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "主数据查询",
+          "code": "DV_MD_Search_Nav"
+        },
+        {
+          "key": "DV_MD_Approval",
+          "router": "/bdos/DataView/masterDataManage/DataApproval",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "主数据审批",
+          "code": "DV_MD_Approval_Nav"
+        },
+        {
+          "key": "DV_MD_Distribute",
+          "router": "/bdos/DataView/masterDataManage/Distribute",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "主数据分发",
+          "code": "DV_MD_Distribute_Nav"
+        },
+        {
+          "key": "DV_MD_Approval_Config",
+          "router": "/bdos/DataView/masterDataManage/ConfigManage",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "主数据审批配置",
+          "code": "DV_MD_Approval_Config_Nav"
+        },
+        {
+          "key": "DV_MD_Change_Log",
+          "router": "/bdos/DataView/masterDataManage/LogChange",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "变更日志",
+          "code": "DV_MD_Change_Log_Nav"
+        },
+        {
+          "key": "DV_MD_Distribute_Log",
+          "router": "/bdos/DataView/masterDataManage/LogDistribute",
+          "icon": "",
+          "parentKey": "DV_MasterData",
+          "cn": "分发日志",
+          "code": "DV_MD_Distribute_Log_Nav"
+        }
+      ]
+    }
+  ],
+  "msg": ""
+}

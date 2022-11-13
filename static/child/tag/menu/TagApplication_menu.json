@@ -1,0 +1,41 @@
+{
+  "code": "000000",
+  "data": [
+    {
+      "key": "TA_Tag_System",
+      "router": "/tag/TagApplication/tagSystem",
+      "icon": "tags",
+      "cn": "标签体系",
+      "code": "TA_Tag_System_Nav"
+    },
+    {
+      "key": "TA_Tag_Portrait",
+      "router": "/tag/TagApplication/tagPortrait",
+      "icon": "picture-o",
+      "cn": "标签画像",
+      "code": "TA_Tag_Portrait_Nav"
+    },
+    {
+      "key": "TA_Tag_Search",
+      "router": "/tag/TagApplication/tagSearch",
+      "icon": "search",
+      "cn": "标签搜索",
+      "code": "TA_Tag_Search_Nav"
+    },
+    {
+      "key": "TA_Group_Manage",
+      "router": "/tag/TagApplication/group",
+      "icon": "server",
+      "cn": "群组管理",
+      "code": "TA_Group_Manage_Nav"
+    },
+    {
+      "key": "TA_Tag_Service",
+      "router": "/tag/TagApplication/tagService",
+      "icon": "server",
+      "cn": "标签服务",
+      "code": "TA_Tag_Service_Nav"
+    }
+  ],
+  "msg": ""
+}

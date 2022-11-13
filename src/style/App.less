@@ -1,26 +1,35 @@
-/* @import "./overwrite_antd.less"; */
+@import "./overwrite_antd.less";
 @import "./variable.less";
 .remMixin();
 
-html, .web-main {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  .web-main-root { 
-    height: 100%;
-    .init-spin-loading {
-      width: 100%;
-      height: 100%;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+html {
+  font-size: 12px;
+
+  body {
+    color: var(--main-content-font-color);
+    font-size: @root-font-size;
+    line-height: 1.2;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--main-content-font-color);
   }
 }
 
-.web-main-root {
+.@{product-prefix}-root {
+  height: 100%;
+  overflow: hidden;
+  .overrideAntd();
+}
+
+.web-main {
   font-family: var(--font-family);
+  height: 100%;
   .projectStyle();
 }
 
@@ -349,31 +358,6 @@ html, .web-main {
   }
 }
 
-// 通知框
-.web-main-ant-notification {
-  background: var(--warn-bg-color);
-
-  .ant-notification-notice-message {
-    color: var(--main-content-font-color);
-  }
-
-  .ant-notification-notice-description {
-    color: var(--main-content-font-color);
-
-    .web-main-notice-desc {
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
-
-  .anticon.web-main-notice-icon {
-    color: var(--warn-icon-color);
-    font-size: 18px;
-    margin-right: 6px;
-    vertical-align: middle;
-  }
-}
-
 .headerAntd() {
   .main-ant-menu {
     margin-left: @header-menu-margin-left;
@@ -423,4 +407,172 @@ html, .web-main {
   .main-ant-menu-submenu-title:hover {
     color: var(--header-item-hover-font-color);
   }
+}
+
+.form-icon-tip {
+  font-size: 12px;
+  color: var(--tip-font-color);
+  margin: 5px 0;
+
+  .anticon {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+}
+
+/* 更多菜单导航样式 */
+.main-ant-menu-submenu-popup.top-more-sub-menu {
+  .main-ant-menu-vertical .main-ant-menu-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .main-ant-menu {
+    background-color: var(--header-top-more-menu-bg-color);
+    color: var(--header-top-more-menu-font-color);
+    font-size: 16px;
+    margin-top: -10px;
+
+    .main-ant-menu-item,
+    .main-ant-menu-item-active {
+      color: var(--header-top-more-menu-font-color);
+      background-color: var(--header-top-more-menu-bg-color);
+    }
+
+    .main-ant-menu-item:hover,
+    .main-ant-menu-item-selected {
+      background-color: var(--header-top-more-item-selected-bg-color);
+      color: var(--header-top-more-item-selected-font-color);
+    }
+  }
+}
+
+.main-top-person-menu {
+  min-width: 100px !important;
+  background-color: var(--header-top-more-menu-bg-color);
+
+  .main-ant-dropdown-menu {
+    background-color: transparent;
+    font-size: @root-font-size;
+    margin-top: 20px;
+
+    .main-ant-dropdown-menu-item {
+      a {
+        color: var(--header-top-more-menu-font-color);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &:hover {
+        background-color: var(--header-top-more-menu-item-bg-color);
+      }
+    }
+  }
+}
+
+.main-web-about-modal {
+  .main-ant-modal-body {
+    padding: 24px 40px;
+  }
+
+  .license-div {
+    border-bottom: 1px solid @border-color-base;
+    padding: 10px 20px;
+
+    p {
+      margin: 0;
+      margin-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+
+      li {
+        padding: 5px 0;
+
+        .anticon {
+          padding-right: 5px;
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .about-div {
+    line-height: 30px;
+
+    .label-span {
+      display: inline-block;
+      width: 70px;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: right;
+    }
+  }
+}
+
+.web-main-modal--confirm {
+  // 提示框
+  width: 400px;
+}
+
+// 通知框
+.web-main-ant-notification {
+  background: var(--warn-bg-color);
+
+  .ant-notification-notice-message {
+    color: var(--main-content-font-color);
+  }
+
+  .ant-notification-notice-description {
+    color: var(--main-content-font-color);
+
+    .web-main-notice-desc {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .anticon.web-main-notice-icon {
+    color: var(--warn-icon-color);
+    font-size: 18px;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+}
+
+//滚动条样式设置
+/*这是针对缺省样式 (必须的)*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* 滚动条的滑轨背景颜色 */
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-bg-color);
+}
+
+/* 滑块颜色 */
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-bg-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #BABABB;
+  height: 0;
+  width: 0;
+}
+
+/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+::-webkit-scrollbar-corner {
+  background-color: #FFFFFF;
 }

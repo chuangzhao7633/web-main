@@ -267,7 +267,7 @@
   --a-active-font-color: var(--a-hover-color);
   --a-disabled-font-color: var(--basic-disabled-font-color);
 
-  /* bfd-row 选择，单选相关设置 */
+  /* web-row 选择，单选相关设置 */
   --row-select-bg-color: var(--basic-container-bg-color);
   --row-select-color: var(--basic-font-color);
   --row-select-hover-bg-color: var(--basic-container-element-hover-bg-color);
@@ -376,7 +376,7 @@
   --picker-cell-hover-bg-color: #F2F5FD;
   --picker-cell-disabled-bg-color: #f5f5f5;
   --picker-selected-cell-inside-bg-color: #eff2fd;
-  /* bfd组件使用 */
+  /* web组件使用 */
 
   /* radio相关设置 */
   --radio-font-color: var(--basic-font-color);
@@ -643,7 +643,7 @@
   --tree-toggle-icon-color: var(--basic-font-color);
   /*树toggle图标颜色*/
   /*--tree-node-icon-color: #7188DF; !*树图标颜色*!*/
-  --tree-node-icon-color: #B8BFD1;
+  --tree-node-icon-color: #B8web1;
   /*树图标颜色*/
   --tree-node-disabled-font-color: #E5E5EE;
   /*树 结点diabled字体颜色*/
